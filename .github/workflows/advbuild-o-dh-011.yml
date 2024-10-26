@@ -24,11 +24,6 @@ jobs:
         shell: pwsh
         run: ./.github/scripts-yml/git-ls-tree.ps1
 
-      - name: Add Janus 3.5
-        shell: bash
-        run: |
-          ./.tools/Janus.v.3.5/setup.bat
-
       - name: Decrypt oAESFile
         shell: bash
         run: |
