@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A7ABF114F70B4B98B4E678E9C4028BEE" DisplayName="Oracle Java SE Development Kit 8u281 x64" VersionMin="1.8"
+      SetupFileUrl="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244052_89d678f2be164786b292527658ca1605"
+      Location="1" ExactSize="175084680" MD5="026715c331b4d14fcd3288a229aefd3c"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions=""
+      NoUiComLine="/s"
+      Operator="0" Options="xf" TargetName="Oracle Java SE Development Kit?jdk-8u281-windows-x64.exe"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A7ABF114F70B4B98B4E678E9C4028BEECurrentVersion" Prereq="A7ABF114F70B4B98B4E678E9C4028BEE" SearchType="2"
+      SearchString="HKLM\SOFTWARE\JavaSoft\Java Development Kit\CurrentVersion" VerMin="1.8"
+      Order="1" Property="PreReqSearch_A7ABF114F70B4B98B4E678E9C4028BEE"/>
+    <ROW SearchKey="A7ABF114F70B4B98B4E678E9C4028BEEJavaDevelopmentKit" Prereq="A7ABF114F70B4B98B4E678E9C4028BEE" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\Java Development Kit" VerMin="1.8.0_281"
+      Order="2" Property="PreReqSearch_1_A7ABF114F70B4B98B4E678E9C4028BEE"/>
+  </COMPONENT>
+</FRAGMENT>

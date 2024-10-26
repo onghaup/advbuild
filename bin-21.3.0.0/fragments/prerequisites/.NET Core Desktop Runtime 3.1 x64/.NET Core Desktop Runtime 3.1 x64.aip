@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D0156DFD814047AB868D49D0D15F8245" DisplayName=".NET Core Desktop Runtime 3.1.32 x64" VersionMin="3.1"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/b92958c6-ae36-4efa-aafe-569fced953a5/1654639ef3b20eb576174c1cc200f33a/windowsdesktop-runtime-3.1.32-win-x64.exe"
+      Location="1" ExactSize="54712856" MD5="fda137d0a592cb92d65b139966bbcf8b"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="fx" TargetName=".NET Core 3.1"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D0156DFD814047AB868D49D0D15F8245Microsoft.WindowsDesktop.App" Prereq="D0156DFD814047AB868D49D0D15F8245" SearchType="14"
+      SearchString="[ProgramFiles64Folder]dotnet\shared\Microsoft.WindowsDesktop.App" VerMin="3.1.32"
+      Order="1" Property="PreReqSearch_D0156DFD814047AB868D49D0D15F8245"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.7" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D1537068000D4884A60A351D632BDC05" DisplayName=".NET Core IIS Hosting 2.1.5" VersionMin="2.1"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/86df96bb-384c-4d7a-82ce-2e4c2c871189/045870c1ab4004219cb312039c5a64d5/dotnet-hosting-2.1.5-win.exe"
+      Location="1" ExactSize="97257960" MD5="b8f704cfe0556cabbde70f70458119ed"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET Core 2.1"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D1537068000D4884A60A351D632BDC05NETCore" Prereq="D1537068000D4884A60A351D632BDC05" SearchType="1"
+      SearchString="HKLM\SOFTWARE\Microsoft\Updates\.NET Core" VerMin="2.1.5"
+      Order="1" Property="PreReqSearch_D1537068000D4884A60A351D632BDC05"/>
+  </COMPONENT>
+</FRAGMENT>

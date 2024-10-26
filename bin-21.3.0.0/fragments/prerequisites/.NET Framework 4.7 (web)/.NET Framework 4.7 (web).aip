@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.9" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A9B0B950E0447D7BBD52C1DF716128D" DisplayName=".NET Framework 4.7 (web installer)"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/2dfcc711-bb60-421a-a17b-76c63f8d1907/f1586a8eb570edb04d91385d0e654348/ndp47-kb3186500-web.exe"
+      Location="1" ExactSize="1406360" MD5="6babc7245de89e509b8ba0b4f5a86638"
+      WinNTVersions="Windows 7 RTM x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1703 x86, Windows 10 version 1709 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86, Windows 10 version 22H2 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 22H1 x64, Windows 10 version 21H2 x64, Windows 11 x64, Windows Server 2019 x64, Windows Server 2022 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xk" TargetName=".NET Framework 4.7"/>
+    <ATTRIBUTE name="GroupName" value=".NET Framework"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A9B0B950E0447D7BBD52C1DF716128DRelease" Prereq="A9B0B950E0447D7BBD52C1DF716128D" SearchType="9"
+      SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G460804"
+      Order="1" Property="PreReqSearch_A9B0B950E0447D7BBD52C1DF716128D"/>
+  </COMPONENT>
+</FRAGMENT>

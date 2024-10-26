@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.2.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D06A0344C69BEBCBD449E2F09A" DisplayName="SQL Server Express LocalDB 2022" VersionMin="16.0"
+	  SetupFileUrl="https://download.microsoft.com/download/3/8/d/38de7036-2433-4207-8eae-06e247e17b25/SqlLocalDB.msi"
+	  Location="1" ExactSize="63508480" MD5="230861da18d2e146f907c77f6da9384a"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64"
+	  BasicUiComLine="/qb IACCEPTSQLLOCALDBLICENSETERMS=YES"
+	  NoUiComLine="/qn IACCEPTSQLLOCALDBLICENSETERMS=YES"
+	  Operator="1" Options="fx" TargetName="SQL Server Express LocalDB 2022"/>
+	<ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D06A0344C69BEBCBD449E2F09ASystemFolderfile.dll" Prereq="D06A0344C69BEBCBD449E2F09A" SearchType="2"
+	  SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server 2022 Redist\SqlLocalDB\CurrentVersion\Version" VerMin="16.0.1000.6"
+	  Order="1" Property="PreReqSearch_D06A0344C69BEBCBD449E2F09A"/>
+  </COMPONENT>
+</FRAGMENT>

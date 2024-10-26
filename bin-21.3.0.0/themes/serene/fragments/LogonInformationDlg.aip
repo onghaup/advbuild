@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">  
+  <ROW Dialog_="LogonInformationDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="520" Height="320" Attributes="1" Text="[BannerBitmap]" Order="100"/>
+    <ROW Dialog_="LogonInformationDlg" Control="Next" Type="PushButton" X="449" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Next]" TextStyle="DlgFont10" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LogonInformationDlg" Control="Cancel" Type="PushButton" X="1" Y="1" Width="1" Height="1" Attributes="3" Text="[ButtonText_Cancel]" TextStyle="DlgFont10" Order="300" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LogonInformationDlg" Control="Back" Type="PushButton" X="15" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Back]" TextStyle="DlgFont10" Order="400" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LogonInformationDlg" Control="Title" Type="Text" X="66" Y="46" Width="383" Height="30" Attributes="196611" TextStyle="TitleFontSegoe" Order="500" TextLocId="Control.Text.LogonInformationDlg#Title"/>
+    <ROW Dialog_="LogonInformationDlg" Control="NameLabel" Type="Text" X="71" Y="108" Width="378" Height="11" Attributes="65539" TextStyle="DlgFont10" Order="600" TextLocId="Control.Text.LogonInformationDlg#NameLabel"/>
+    <ROW Dialog_="LogonInformationDlg" Control="NameEdit" Type="Edit" X="71" Y="120" Width="378" Height="18" Attributes="3" Property="USER_NAME" TextStyle="DlgFont10" Order="700" TextLocId="Control.Text.LogonInformationDlg#NameEdit"/>
+    <ROW Dialog_="LogonInformationDlg" Control="DomainLabel" Type="Text" X="71" Y="146" Width="378" Height="11" Attributes="65539" TextStyle="DlgFont10" Order="800" TextLocId="Control.Text.LogonInformationDlg#DomainLabel"/>
+    <ROW Dialog_="LogonInformationDlg" Control="DomainEdit" Type="Edit" X="71" Y="158" Width="378" Height="18" Attributes="3" Property="DOMAIN_NAME" TextStyle="DlgFont10" Order="900" TextLocId="Control.Text.LogonInformationDlg#DomainEdit"/>
+    <ROW Dialog_="LogonInformationDlg" Control="PasswordLabel" Type="Text" X="71" Y="182" Width="378" Height="11" Attributes="65539" TextStyle="DlgFont10" Order="1000" TextLocId="Control.Text.LogonInformationDlg#PasswordLabel"/>
+    <ROW Dialog_="LogonInformationDlg" Control="PassworEdit" Type="Edit" X="71" Y="195" Width="378" Height="18" Attributes="2097155" Property="USER_PASSWORD" TextStyle="DlgFont10" Order="1100" TextLocId="Control.Text.LogonInformationDlg#PasswordEdit"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="LogonInformationDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="LogonInformationDlg" HCentering="50" VCentering="50" Width="520" Height="320" Attributes="3" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.LogonInformationDlg"/>
+  </COMPONENT>
+</FRAGMENT>

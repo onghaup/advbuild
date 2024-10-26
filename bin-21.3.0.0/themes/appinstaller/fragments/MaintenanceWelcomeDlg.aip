@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="9.4" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Next" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="3" Text="[ButtonImage]" Order="200" TextStyle="[ImageBtnFont]" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="ReinstallButton" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" Order="400" TextStyle="[ImageBtnFont]" Options="1" ExtType="ImageButton" ExtDataLocId="AppInstaller.Control.Text.ReinstallButton"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control="LaunchButton" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" Order="500" TextStyle="[ImageBtnFont]" Options="1" ExtType="ImageButton" ExtDataLocId="AppInstaller.Control.Text.LaunchBtn"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Description" Type="Text" X="16" Y="158" Width="454" Height="30" Attributes="196611" TextStyle="[DescriptionFont]" Order="600" TextLocId="AppInstaller.Control.Text.MaintDesc"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton" />
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control_="LaunchButton" Event="DoAction" Argument="AI_LaunchApp" Condition="1" Ordering="100"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control_="LaunchButton" Event="EndDialog" Argument="Exit" Condition="1" Ordering="200"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="EnableRollback" Argument="False" Condition="OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="500"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="Reinstall" Argument="All" Condition="OutOfDiskSpace &lt;&gt; 1" Ordering="200"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="ReinstallMode" Argument="ecmus" Condition="OutOfDiskSpace &lt;&gt; 1" Ordering="100"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="(OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;)" Ordering="600"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="400"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control_="ReinstallButton" Event="EndDialog" Argument="Return" Condition="1" Ordering="300"/>
+	<ROW Dialog_="MaintenanceWelcomeDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="MaintenanceWelcomeDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.MaintenanceWelcomeDlg"/>
+  </COMPONENT>
+</FRAGMENT>

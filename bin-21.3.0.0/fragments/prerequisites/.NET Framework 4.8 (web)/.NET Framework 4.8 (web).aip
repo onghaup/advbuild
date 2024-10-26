@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.9" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BF9259651485FB4F316A40CB01E7B" DisplayName=".NET Framework 4.8 (web installer)"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe"
+      Location="1" ExactSize="1479400" MD5="40604baf5a025f4b23cbe463239b68cb"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86, Windows 10 version 22H2 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 10 version 22H2 x64, Windows Server 2022 x64, Windows 11 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xk" TargetName=".NET Framework 4.8"/>
+    <ATTRIBUTE name="GroupName" value=".NET Framework"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BF9259651485FB4F316A40CB01E7BRelease" Prereq="BF9259651485FB4F316A40CB01E7B" SearchType="9"
+      SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G528048"
+      Order="1" Property="PreReqSearch_BF9259651485FB4F316A40CB01E7B"/>
+  </COMPONENT>
+</FRAGMENT>

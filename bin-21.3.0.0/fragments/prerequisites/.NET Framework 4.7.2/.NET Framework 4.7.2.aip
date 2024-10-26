@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.9" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A6D7F21EAEB4C4A901F0979CF110936" DisplayName=".NET Framework 4.7.2"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/1f5af042-d0e4-4002-9c59-9ba66bcf15f6/089f837de42708daacaae7c04b7494db/ndp472-kb4054530-x86-x64-allos-enu.exe"
+      Location="1" ExactSize="83937536" MD5="4037bdde26bf72e2ce5108cb30387bcd"
+      WinNTVersions="Windows 7 RTM x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86, Windows 10 version 22H2 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 10 version 22H2 x64, Windows 11 x64, Windows Server 2019 x64, Windows Server 2022 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xk" TargetName=".NET Framework 4.7.2"/>
+    <ATTRIBUTE name="GroupName" value=".NET Framework"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A6D7F21EAEB4C4A901F0979CF110936Release" Prereq="A6D7F21EAEB4C4A901F0979CF110936" SearchType="9"
+      SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G461813"
+      Order="1" Property="PreReqSearch_A6D7F21EAEB4C4A901F0979CF110936"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BF57E49C4E0C98AF391A28FF818B" DisplayName=".NET Runtime 8.0.0 x64" VersionMin="8.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe"
+	  Location="1" ExactSize="28364672" MD5="0de4dce5324ab59b7f10fe449840fb4b"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="f" TargetName=".NET 8.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BF57E49C4E0C98AF391A28FF818BSystemFolderfile.dll" Prereq="BF57E49C4E0C98AF391A28FF818B" SearchType="12"
+	  SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.NETCore.App" VerMin="8.0.0"
+	  Order="1" Property="PreReqSearch_BF57E49C4E0C98AF391A28FF818B"/>
+  </COMPONENT>
+</FRAGMENT>

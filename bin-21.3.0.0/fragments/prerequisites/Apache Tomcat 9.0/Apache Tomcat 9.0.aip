@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.2" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C16615717EF460EA0847BF18A643E82" DisplayName="Apache Tomcat 9.0.70" VersionMin="9.0"
+      SetupFileUrl="https://downloads.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.exe"
+      Location="1" ExactSize="12421008" MD5="308e19532884f914f6982ce021d4991f"
+      WinNTVersions=""
+      WinNT64Versions=""
+      NoUiComLine="/S"
+      Operator="1" Options="xf" TargetName="Apache Tomcat"/>
+    <ATTRIBUTE name="GroupName" value="Web Server"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C16615717EF460EA0847BF18A643E82Version" Prereq="C16615717EF460EA0847BF18A643E82" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Apache Software Foundation\Tomcat\9.0\Tomcat9\Version" VerMin="9.0.70"
+      Order="1" Property="PreReqSearch_C16615717EF460EA0847BF18A643E82"/>
+  </COMPONENT>
+</FRAGMENT>

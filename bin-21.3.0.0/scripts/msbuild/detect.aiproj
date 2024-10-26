@@ -1,0 +1,23 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7abef2fc-df45-464c-8d54-cebf3f5ba430</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <WorkingDirectory>.</WorkingDirectory>
+    <AssemblyName>Advinst detect</AssemblyName>
+    <Name>Advinst detect</Name>
+    <RootNamespace>Advinst detect sample</RootNamespace>
+    <AdvinstImport>True</AdvinstImport>
+  </PropertyGroup>
+  <Import Condition="'$(AdvancedInstallerMSBuildTargets)' != ''" Project="$(AdvancedInstallerMSBuildTargets)\AdvInstExtTasks.Targets" />
+  <Import Condition="('$(AdvancedInstallerMSBuildTargets)' == '') And (Exists('$(MSBuildExtensionsPath32)\Caphyon\Advanced Installer\AdvInstExtTasks.Targets'))" Project="$(MSBuildExtensionsPath32)\Caphyon\Advanced Installer\AdvInstExtTasks.Targets" />
+  <Target Name="DetectOutputs" DependsOnTargets="Detection">
+    <ResolveTargetRelativePath Outputs="@(AssignedOutputs)" >
+      <Output TaskParameter="ResolvedOutputs" ItemName="ResolvedOutputs" />
+    </ResolveTargetRelativePath> 
+
+    <Message Text="###output;%(ResolvedOutputs.ProjectGuid);%(ResolvedOutputs.OutputGroup);%(ResolvedOutputs.Identity)" Importance="High"
+             Condition="%(ResolvedOutputs.OutputGroup) != 'TargetPath'"/>
+  </Target>
+</Project>

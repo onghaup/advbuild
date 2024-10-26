@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.7" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="CBBD1EB928C37D532E" DisplayName="ASP.NET Core Hosting Bundle 5.0.17" VersionMin="5.0"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/05726c49-3a3d-4862-9ff8-0660d9dc3c52/71c295f9287faad89e2d3233a38b44fb/dotnet-hosting-5.0.17-win.exe"
+      Location="1" ExactSize="67654840" MD5="67d0a9b855b404c5ab8452de6d3361a7"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET 5.0"/>
+    <ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CBBD1EB928C37D532ENETCore" Prereq="CBBD1EB928C37D532E" SearchType="1"
+      SearchString="HKLM\SOFTWARE\Microsoft\Updates\.NET" VerMin="5.0.17"
+      Order="1" Property="PreReqSearch_CBBD1EB928C37D532E"/>
+  </COMPONENT>
+</FRAGMENT>

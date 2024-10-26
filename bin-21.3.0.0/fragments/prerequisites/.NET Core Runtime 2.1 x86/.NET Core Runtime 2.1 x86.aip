@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.7" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="CFEF614E7E6846EE90906938A2E20AF3" DisplayName=".NET Core Runtime 2.1.12 x86" VersionMin="2.1"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/0fd34b03-08ed-44ec-9761-308717c7fd27/7556f134a19420dbe781b44a13c4d666/dotnet-runtime-2.1.12-win-x86.exe"
+      Location="1" ExactSize="22664472" MD5="bcf8774fe65a776febe78abcd2cc4701"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET Core 2.1"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CFEF614E7E6846EE90906938A2E20AF3Microsoft.NETCore.App" Prereq="CFEF614E7E6846EE90906938A2E20AF3" SearchType="12"
+      SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\sharedfx\Microsoft.NETCore.App" VerMin="2.1.12"
+      Order="1" Property="PreReqSearch_CFEF614E7E6846EE90906938A2E20AF3"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://advancedinstaller.com/psscriptconfig.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "properties": {
+    "scriptPath": {
+      "$id": "#/properties/scriptPath",
+      "type": "string",
+      "title": "script file name",
+      "default": ""
+    },
+    "scriptArguments": {
+      "$id": "#/properties/scriptArguments",
+      "type": "string",
+      "title": "script arguments",
+      "default": ""
+    },
+    "scriptExecutionMode": {
+      "$id": "#/properties/scriptExecutionMode",
+      "type": "string",
+      "title": "The ScriptExecutionMode Schema",
+      "default": ""
+    },
+    "stopOnScriptError": {
+      "$id": "#/properties/stopOnScriptError",
+      "type": "boolean",
+      "title": "The Stoponscripterror Schema",
+      "default": false,
+      "examples": [
+        false, true
+      ]
+    },
+	"runOnce": {
+      "$id": "#/properties/runOnce",
+      "type": "boolean",
+      "title": "The Runonce Schema",
+      "default": false,
+      "examples": [
+        false, true
+      ]
+    },
+    "showWindow": {
+      "$id": "#/properties/showWindow",
+      "type": "boolean",
+      "title": "The Showwindow Schema",
+      "default": false,
+      "examples": [
+        false, true
+      ]
+    },
+	"waitForScriptToFinish": {
+      "$id": "#/properties/waitForScriptToFinish",
+      "type": "boolean",
+      "title": "The Waitforscripttofinish Schema",
+      "default": false,
+      "examples": [
+        false, true
+      ]
+    },
+	"timeout": {
+	  "$id":"#/properties/showWindow",
+   	  "type": "integer",
+	  "title": "The Showwindow Schema",
+	  "default": -1
+	}
+  }
+}

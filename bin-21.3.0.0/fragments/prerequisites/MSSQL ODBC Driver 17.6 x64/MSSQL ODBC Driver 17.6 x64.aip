@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="17.4" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="F74C672FB4241249A0B47987CD5B794" DisplayName="SQL Server ODBC Driver 17.6 x64" VersionMin="17.6.1.1"
+      SetupFileUrl="https://download.microsoft.com/download/6/b/3/6b3dd05c-678c-4e6b-b503-1d66e16ef23d/en-US/17.6.1.1/x64/msodbcsql.msi"
+      Location="1" ExactSize="4632576" MD5="617c42ed3df333af248a7274531d1ad9"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions=""
+      BasicUiComLine="/qb IACCEPTMSODBCSQLLICENSETERMS=YES"
+      NoUiComLine="/qn IACCEPTMSODBCSQLLICENSETERMS=YES"
+      Operator="1" Options="xf" TargetName="SQL Server Express 2019?msodbcsql_x64.msi"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="F74C672FB4241249A0B47987CD5B794Version" Prereq="F74C672FB4241249A0B47987CD5B794" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft ODBC Driver 17 for SQL Server\CurrentVersion\Version" VerMin="17.6.1.1"
+      Order="1" Property="PreReqSearch_F74C672FB4241249A0B47987CD5B794"/>
+  </COMPONENT>
+</FRAGMENT>

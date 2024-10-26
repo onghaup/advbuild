@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/4"
+           xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/4"
+           xmlns:t="http://schemas.microsoft.com/appx/manifest/types"
+           xmlns:f="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+           xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+           xmlns:uap11="http://schemas.microsoft.com/appx/manifest/uap/windows10/11"
+           xmlns:desktop10="http://schemas.microsoft.com/appx/manifest/desktop/windows10/10"
+           >
+
+  <xs:import namespace="http://schemas.microsoft.com/appx/manifest/types"/>
+  <xs:import namespace="http://schemas.microsoft.com/appx/manifest/foundation/windows10"/>
+  <xs:import namespace="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"/>
+  <xs:import namespace="http://schemas.microsoft.com/appx/manifest/uap/windows10/11"/>
+  <xs:import namespace="http://schemas.microsoft.com/appx/manifest/desktop/windows10/10"/>
+
+  <xs:element name="Extension" substitutionGroup="f:ExtensionChoice">
+    <xs:complexType>
+      <xs:choice minOccurs="0">
+        <xs:element name="PrimaryInteropAssemblies" type="CT_PrimaryInteropAssemblies"/>
+        <xs:element name="ClassicAppCompatKeys" type="CT_ClassicAppCompatKeys"/>
+      </xs:choice>
+      <xs:attribute name="Category" type="t:ST_PackageExtensionCategory_Restricted4" use="required"/>
+      <xs:attributeGroup ref="t:ExtensionBaseAttributes"/>
+      <xs:attributeGroup ref="uap10:TrustLevelGroup"/>
+      <xs:attributeGroup ref="uap11:ManganeseExtensionAttributesGroup"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="CT_PrimaryInteropAssemblies">
+    <xs:sequence minOccurs="0" maxOccurs="10000">
+      <xs:element name="Redirect" minOccurs="0" maxOccurs="10000">
+        <xs:complexType>
+           <xs:attribute name="Version" type="t:ST_VersionDuoOrTrio" use="required"/>
+           <xs:attribute name="AssemblyVersion" type="t:ST_VersionQuad" use="required"/>
+           <xs:attribute name="PublicKey" type="ST_PublicKey" use="required"/>
+           <xs:attribute name="MachineType" type="t:ST_Architecture" use="required"/>
+           <xs:attribute name="TargetClrVersion" type="t:ST_VersionDuoOrTrio" use="required"/>
+           <xs:attribute name="FolderPath" type="t:ST_FileName" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="AssemblyName" type="t:ST_NonEmptyString" use="required"/>
+    <xs:attribute name="AssemblyVersion" type="t:ST_VersionQuad" use="required"/>
+    <xs:attribute name="PublicKey" type="ST_PublicKey" use="required"/>
+    <xs:attribute name="MachineType" type="t:ST_Architecture" use="required"/>
+    <xs:attribute name="TargetClrVersion" type="t:ST_VersionDuoOrTrio" use="required"/>
+    <xs:attribute name="Path" type="t:ST_FileName" use="required"/>
+  </xs:complexType>
+  
+  <xs:simpleType name="ST_PublicKey">
+    <xs:restriction base="t:ST_NonEmptyString">
+      <xs:pattern value="[0-9a-fA-F]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="CT_ClassicAppCompatKeys">
+    <xs:sequence minOccurs="0" maxOccurs="10000">
+      <xs:element name="ClassicAppCompatKey" minOccurs="0" maxOccurs="10000">
+        <xs:complexType>
+           <xs:attribute name="Name" type="t:ST_RegistryPath" use="required"/>
+           <xs:attribute name="ValueName" type="xs:string"/>
+           <xs:attribute name="ValueType" type="t:ST_ValueType"/>
+           <xs:attribute name="Value" type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element ref="desktop10:ClassicAppCompatKey" minOccurs="0" maxOccurs="10000"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

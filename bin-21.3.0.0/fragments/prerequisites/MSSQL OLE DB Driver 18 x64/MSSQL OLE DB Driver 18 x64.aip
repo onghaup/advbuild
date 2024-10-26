@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A6FACB4999AA9445757E41FC9A" DisplayName="SQL Server OLE DB Driver 18 x64" VersionMin="18.6.3.0"
+      SetupFileUrl="https://download.microsoft.com/download/2/6/1/2613c841-cf12-4ba3-b0f8-50dcc195faa4/en-US/18.6.3.0/x64/msoledbsql.msi"
+      Location="1" ExactSize="7274496" MD5="6a816f3d1084c934645bd804eb6c87ee"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64"
+      BasicUiComLine="/qb IACCEPTMSOLEDBSQLLICENSETERMS=YES"
+      NoUiComLine="/qn IACCEPTMSOLEDBSQLLICENSETERMS=YES"
+      Operator="1" Options="xf" TargetName="SQL Server OLE DB Driver 18"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A6FACB4999AA9445757E41FC9AVersion" Prereq="A6FACB4999AA9445757E41FC9A" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft OLE DB Driver for SQL Server\CurrentVersion\Version" VerMin="18.6.3.0"
+      Order="1" Property="PreReqSearch_A6FACB4999AA9445757E41FC9A"/>
+  </COMPONENT>
+</FRAGMENT>

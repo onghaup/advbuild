@@ -1,0 +1,32 @@
+<Button
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d">
+  <Button.Resources>
+    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="[AiWinUIBtnBorderPointerOver]" />
+    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="[AiWinUIBtnForegroundPointerOver]" />
+    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="[AiWinUIBtnBackgroundPointerOver]" Opacity="[AiWinUIBtnBackgroundOpacityPointerOver]" />
+
+    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="[AiWinUIBtnBorderPressed]" />
+    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="[AiWinUIBtnForegroundPressed]" />
+    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="[AiWinUIBtnBackgroundPressed]" Opacity="[AiWinUIBtnBackgroundOpacityPressed]" />
+
+    <SolidColorBrush x:Key="ButtonBorderBrushDisabled" Color="[AiWinUIBtnBorderDisabled]" Opacity="[AiWinUIBtnBorderOpacityDisabled]"/>
+    <SolidColorBrush x:Key="ButtonForegroundDisabled" Color="[AiWinUIBtnForegroundDisabled]" />
+    <SolidColorBrush x:Key="ButtonBackgroundDisabled" Color="[AiWinUIBtnBackgroundDisabled]" Opacity="[AiWinUIBtnBackgroundOpacityDisabled]" />
+  </Button.Resources>
+  <Button.Style>
+    <Style TargetType="Button">
+      <Setter Property="BorderBrush" Value="[AiWinUIBtnBorderNormal]" />
+      <Setter Property="Foreground" Value="[AiWinUIBtnForegroundNormal]" />
+      <Setter Property="Background" >
+        <Setter.Value>
+          <SolidColorBrush Color="[AiWinUIBtnBackgroundNormal]" Opacity="[AiWinUIBtnBackgroundOpacityNormal]" />
+        </Setter.Value>
+      </Setter>
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+  </Button.Style>
+</Button>

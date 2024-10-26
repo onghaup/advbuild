@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="FC441DA8855740179A0DFCF9560D3DEE" DisplayName="ASP.NET Core Runtime 7.0.14 x86" VersionMin="7.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/14e62731-8d55-44fe-8c2c-fffa95129223/f9cf2c77bc075757cd7d87cd65637f7d/aspnetcore-runtime-7.0.14-win-x86.exe"
+	  Location="1" ExactSize="8858416" MD5="5a35613b530e626effb75c797078121e"
+	  WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+	  WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="f" TargetName="ASP.NET Core 7.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="FC441DA8855740179A0DFCF9560D3DEESystemFolderfile.dll_6" Prereq="FC441DA8855740179A0DFCF9560D3DEE" SearchType="1"
+	  SearchString="HKLM\SOFTWARE\Microsoft\ASP.NET Core\Shared Framework\v7.0" VerMin="7.0.14"
+	  Order="1" Property="PreReqSearch_6_FC441DA8855740179A0DFCF9560D3DEE"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="F3520F64DA5998338D97129FAD2" DisplayName=".NET Runtime 7.0.14 x64" VersionMin="7.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/5e3be9c1-4b4c-4605-b3bc-18ef04b3c8d5/b1f864adc9c81ab6680385a4270b3887/dotnet-runtime-7.0.14-win-x64.exe"
+	  Location="1" ExactSize="28253944" MD5="a7bc5a0906c02f68ec3efd711b499339"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="f" TargetName=".NET 7.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="F3520F64DA5998338D97129FAD2SystemFolderfile.dll_2" Prereq="F3520F64DA5998338D97129FAD2" SearchType="12"
+	SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.NETCore.App" VerMin="7.0.14"
+	Order="1" Property="PreReqSearch_2_F3520F64DA5998338D97129FAD2"/>
+  </COMPONENT>
+</FRAGMENT>

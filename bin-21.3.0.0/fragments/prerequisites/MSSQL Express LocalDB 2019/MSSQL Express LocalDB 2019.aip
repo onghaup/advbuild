@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.0" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A4C9A7823894F87B7A09893D2359F6B" DisplayName="SQL Server Express LocalDB 2019" VersionMin="15.0"
+      SetupFileUrl="https://download.microsoft.com/download/8/4/c/84c6c430-e0f5-476d-bf43-eaaa222a72e0/SqlLocalDB.msi"
+      Location="1" ExactSize="55762944" MD5="c89cb901353cb76a1e8f89b9c44cf5c7"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64"
+      BasicUiComLine="/qb IACCEPTSQLLOCALDBLICENSETERMS=YES"
+      NoUiComLine="/qn IACCEPTSQLLOCALDBLICENSETERMS=YES"
+      Operator="1" Options="xf" TargetName="SQL Server Express LocalDB 2019"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A4C9A7823894F87B7A09893D2359F6BVersion" Prereq="A4C9A7823894F87B7A09893D2359F6B" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server 2019 Redist\SqlLocalDB\CurrentVersion\Version" VerMin="15.0.2000.5"
+      Order="1" Property="PreReqSearch_A4C9A7823894F87B7A09893D2359F6B"/>
+  </COMPONENT>
+</FRAGMENT>

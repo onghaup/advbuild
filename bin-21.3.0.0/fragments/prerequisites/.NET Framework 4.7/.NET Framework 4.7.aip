@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.9" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C8B23E544BA99E5809B4D984F750" DisplayName=".NET Framework 4.7"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/2dfcc711-bb60-421a-a17b-76c63f8d1907/e5c0231bd5d51fffe65f8ed7516de46a/ndp47-kb3186497-x86-x64-allos-enu.exe"
+      Location="1" ExactSize="61584232" MD5="1be68d786e4ced1b240e986b85518d92"
+      WinNTVersions="Windows 7 RTM x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1703 x86, Windows 10 version 1709 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86, Windows 10 version 22H2 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 10 version 22H2 x64, Windows 11 x64, Windows Server 2019 x64, Windows Server 2022 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xk" TargetName=".NET Framework 4.7"/>
+    <ATTRIBUTE name="GroupName" value=".NET Framework"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C8B23E544BA99E5809B4D984F750Release" Prereq="C8B23E544BA99E5809B4D984F750" SearchType="9"
+      SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G460804"
+      Order="1" Property="PreReqSearch_C8B23E544BA99E5809B4D984F750"/>
+  </COMPONENT>
+</FRAGMENT>

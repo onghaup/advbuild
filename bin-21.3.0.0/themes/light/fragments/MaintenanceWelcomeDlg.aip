@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Back" Type="PushButton" X="15" Y="245" Width="56" Height="17" Attributes="1" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Cancel" Type="PushButton" X="0" Y="0" Width="1" Height="1" Attributes="3" Text="[ButtonText_Cancel]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="400" Height="270" Attributes="1048577" Text="[BannerBitmap]" Order="300"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Next" Type="PushButton" X="330" Y="245" Width="55" Height="17" Attributes="3" Text="[ButtonText_Next]" Order="400" TextLocId="-" Options="1"/>    
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Title" Type="Text" X="22" Y="9" Width="359" Height="60" Attributes="196611" TextStyle="VerdanaBold13" Order="500" TextLocId="Control.Text.MaintenanceWelcomeDlg#Title"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Description" Type="Text" X="22" Y="185" Width="343" Height="60" Attributes="196611" Order="600" TextLocId="Control.Text.MaintenanceWelcomeDlg#Description"/>
+    </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="SpawnWaitDialog" Argument="WaitForCostingDlg" Condition="CostingComplete = 1" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="MaintenanceWelcomeDlg" HCentering="50" VCentering="50" Width="400" Height="270" Attributes="3" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.MaintenanceWelcomeDlg"/>
+  </COMPONENT>
+</FRAGMENT>

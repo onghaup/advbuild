@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="B7268159B447C093D152ACB2B6E980" DisplayName="OpenJDK Java Development Kit 8u282 x86" VersionMin="1.8"
+      SetupFileUrl="https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-1.8.0.282-1.b08-x86/java-1.8.0-openjdk-1.8.0.282-1.b08.ojdkbuild.windows.x86.msi"
+      Location="1" ExactSize="145706720" MD5="cc99d44bfd70876c0ba3ce86f535ba7e"
+      WinNTVersions=""
+      WinNT64Versions=""
+      BasicUiComLine="/qb"
+      NoUiComLine="/qn"
+      Operator="0" Options="f" TargetName="OpenJDK Java Development Kit"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="B7268159B447C093D152ACB2B6E980CurrentVersion" Prereq="B7268159B447C093D152ACB2B6E980" SearchType="2"
+      SearchString="HKLM\SOFTWARE\JavaSoft\Java Development Kit\CurrentVersion" VerMin="1.8"
+      Order="1" Property="PreReqSearch_B7268159B447C093D152ACB2B6E980"/>
+    <ROW SearchKey="B7268159B447C093D152ACB2B6E980JavaDevelopmentKit" Prereq="B7268159B447C093D152ACB2B6E980" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\Java Development Kit" VerMin="1.8.0_282"
+      Order="2" Property="PreReqSearch_1_B7268159B447C093D152ACB2B6E980"/>
+  </COMPONENT>
+</FRAGMENT>

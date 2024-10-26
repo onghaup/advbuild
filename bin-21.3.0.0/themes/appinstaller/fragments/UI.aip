@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="9.4" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ButtonText_Back" ValueLocId="Property.ButtonText_Back_No_Arrow" Options="65536"/>
+    <ROW Property="ButtonText_Next" ValueLocId="Property.ButtonText_Next_No_Arrow" Options="65536"/>
+    <ROW Property="Text_Install" ValueLocId="Property.Text_Install"/>
+    <ROW Property="Text_Configure" ValueLocId="Property.Text_Configure"/>
+    <ROW Property="AI_CommitButton" Value="ButtonText_Install" ValueLocId="-"/>
+    <ROW Property="AI_HIDE_CAPTION_ICON_AND_TEXT" Value="1"/>
+    <ROW Property="AI_HIDE_CAPTION_ICON_AND_TEXT_ALL" Value="1"/>
+    <ROW Property="AI_BTN_NO_CORNER_SCALING_CustomInstallBtn" Value="1"/>
+	<ROW Property="AI_BTN_NO_CORNER_SCALING_Next" Value="1"/>
+	<ROW Property="AI_CF_TYPE" Value="1"/>
+	<ROW Property="AI_CF_FRAME_BASE_COLOR" Value="#f3f3f3"/>
+	<ROW Property="AI_CF_FRAME_STYLE" Value="FlatCaption;FlatBorder;NoInactive"/>
+	<ROW Property="AI_CF_CLOSEBTN_BASE_COLOR" Value="#f3f3f3"/>
+	<ROW Property="AI_CF_MINBTN_BASE_COLOR" Value="#f3f3f3"/>
+	<ROW Property="AI_CF_FRAME_BORDER1_COLORS" Value="#ffffff;#ffffff"/>
+	<ROW Property="AI_CF_FRAME_BORDER2_COLORS" Value="#ffffff;#ffffff"/>
+	<ROW Property="AI_CF_FRAME_BORDER3_COLORS" Value="#ffffff;#ffffff"/>
+	<ROW Property="AI_CF_FRAME_CAPTION2_COLORS" Value="#f3f3f3;#f3f3f3;#ffffff;#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"/>
+	<ROW Property="AI_CF_CLOSEBTN_COLORS" Value="#f3f3f3;#e81123;;#f1707a"/>
+	<ROW Property="AI_CF_CLOSEBTN_BORDER_COLORS" Value="#f3f3f3;#e81123;#f3f3f3;#f3f3f3;#f1707a"/>
+	<ROW Property="AI_CF_MINBTN_BORDER_COLORS" Value="#f3f3f3;#cecece;#f3f3f3;#f3f3f3;#898989"/>
+	<ROW Property="AI_CF_MINBTN_COLORS" Value="#f3f3f3;#cecece;;#898989"/>
+	<ROW Property="AI_CF_FRAME_METRICS" Value="40;40;40;40"/>
+	<ROW Property="AI_CF_SHARP_CORNERS" Value="1"/>
+    <ROW Property="AppLogoIcon" Value="applogo.png" Type="1"/>
+	<ROW Property="AppLogoIconDark" Value="applogodark.png" Type="1"/>
+    <ROW Property="ButtonImage" Value="buttonimgs" Type="1"/>
+    <ROW Property="CustomInstallBtn" Value="custominstallbtn" Type="1"/>
+    <ROW Property="CustomInstallBtnDark" Value="custominstallbtndark" Type="1"/>
+    <ROW Property="Background" Value="background" Type="1"/>
+	<ROW Property="BackgroundDark" Value="backgrounddark" Type="1"/>
+    <ROW Property="CompleteSetupIcon" Value="completi" Type="1"/>
+    <ROW Property="CustomSetupIcon" Value="custicon" Type="1"/>
+    <ROW Property="DefaultUIFont" Value="ManufacturerLight" Type="2"/>
+    <ROW Property="DlgTitleFont" Value="DlgFontBold8" Type="2"/>
+    <ROW Property="HyperlinkFont" Value="MetroLinkLight" Type="2"/>
+    <ROW Property="ManufacturerFont" Value="ManufacturerLight" Type="2"/>
+	<ROW Property="ImageBtnFont" Value="ImageButtonLight" Type="2"/>
+	<ROW Property="ProductNameTitleFont" Value="ProductNameTitleLight" Type="2"/>
+	<ROW Property="ProductNameTitleFontSmall" Value="ProductNameTitleLightSmall" Type="2"/>
+	<ROW Property="ManufacturerFontSmall" Value="ManufacturerLightSmall" Type="2"/>
+	<ROW Property="DescriptionFont" Value="DescriptionFontLight" Type="2"/>
+    <ROW Property="ExclamationIcon" Value="exclamic" Type="1"/>
+    <ROW Property="InfoIcon" Value="info" Type="1"/>
+	<ROW Property="AI_ThemeStyle" Value="default"/>
+	<ROW Property="AiSkipExitDlg" Value="" Type="4"/>
+	<ROW Property="AboutBtnIcon" Value="aboutbtn" Type="1"/>
+	<ROW Property="CheckboxImage" Value="checkboximgs" Type="1"/>
+	<ROW Property="AI_BTN_HIDE_TEXT_AboutBtn" Value="1"/>
+	<ROW Property="AiWinUIRequestedTheme" Value="Light"/>
+	<ROW Property="AiWinUIFocusVisualKind" Value="HighVisibility"/>
+	<ROW Property="AiWinUIFluentStyleXaml" Value="dictionarywinui.xaml" Type="1"/>
+    <ROW Property="InfoIconMsi" Value="" Type="1"/>
+    <ROW Property="TaskBarIcon" Value="applogoicon.ico" Type="1"/>
+    <ROW Property="TaskBarIconDark" Value="applogoicondark.ico" Type="1"/>	
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ProgressImage.png" SourcePath="&lt;AI_THEME_VAR&gt;ProgressImage.png"/>
+    <ROW Name="applogo.png" SourcePath="&lt;AI_THEME_VAR&gt;applogo.png"/>
+	<ROW Name="applogodark.png" SourcePath="&lt;AI_THEME_VAR&gt;applogodark.png"/>
+    <ROW Name="buttonimgs" SourcePath="&lt;AI_THEME_VAR&gt;buttonimgs.png"/>
+	<ROW Name="buttonimgs.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\buttonimgs.xaml"/>
+    <ROW Name="custominstallbtn" SourcePath="&lt;AI_THEME_VAR&gt;custominstallbtn.png"/>
+    <ROW Name="custominstallbtndark" SourcePath="&lt;AI_THEME_VAR&gt;custominstallbtndark.png"/>
+	<ROW Name="buttonimgsdark" SourcePath="&lt;AI_THEME_VAR&gt;buttonimgsdark.png"/>
+	<ROW Name="buttonimgsdark.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\buttonimgsdark.xaml"/>
+	<ROW Name="checkboximgs" SourcePath="&lt;AI_THEME_VAR&gt;checkbox.png"/>
+	<ROW Name="ImageCheckBox.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\imagecheckbox.xaml"/>
+	<ROW Name="checkboximgsdark" SourcePath="&lt;AI_THEME_VAR&gt;checkboxdark.png"/>
+    <ROW Name="background" SourcePath="&lt;AI_THEME_VAR&gt;background.png"/>
+	<ROW Name="backgrounddark" SourcePath="&lt;AI_THEME_VAR&gt;backgrounddark.png"/>
+    <ROW Name="exclamic" SourcePath="&lt;AI_THEME_VAR&gt;warning.png"/>
+    <ROW Name="info" SourcePath="&lt;AI_THEME_VAR&gt;info.png"/>
+	<ROW Name="aboutbtn" SourcePath="&lt;AI_THEME_VAR&gt;aboutbtn.png"/>
+	<ROW Name="aboutbtn.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\aboutbtn.xaml"/>
+	<ROW Name="aboutbtndark" SourcePath="&lt;AI_THEME_VAR&gt;aboutbtndark.png"/>
+	<ROW Name="aboutbtndark.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\aboutbtndark.xaml"/>
+	<ROW Name="dictionarywinui.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\dictionarywinui.xaml"/>
+	<ROW Name="GSBT.xaml" SourcePath="&lt;AI_THEMES&gt;appinstaller\resources\splitbutton.xaml"/>
+    <ROW Name="infoIconMsi" SourcePath="&lt;AI_THEME_VAR&gt;info.ico"/>
+	<ROW Name="applogoicon.ico" SourcePath="&lt;AI_THEME_VAR&gt;applogoicon.ico"/>
+    <ROW Name="applogoicondark.ico" SourcePath="&lt;AI_THEME_VAR&gt;applogoicondark.ico"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_THEME_VAR" Path="&lt;AI_THEMES&gt;appinstaller\resources\variations\[|AI_ThemeStyle]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCheckBoxComponent">
+    <ROW Property="RUNAPPLICATION" Value="0"/>
+	<ROW Property="AiSkipExitDlg" Value="0"/>
+	<ROW Property="VIEWREADME" Value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="AboutDlg" Control="No" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="100" ExtData="[ButtonText_No]" ExtDataLocId="[ButtonText_No]"/>
+    <ROW Dialog_="AboutDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="330" Height="120" Attributes="1" Text="[Background]" Order="200"/>
+    <ROW Dialog_="AboutDlg" Control="ProductNameTitle" Type="Text" X="14" Y="8" Width="200" Height="25" Attributes="196611" TextStyle="[ProductNameTitleFontSmall]" Order="300" TextLocId="AppInstaller.Control.Text.About"/>
+    <ROW Dialog_="AboutDlg" Control="CompanyText" Type="Text" X="14" Y="28" Width="200" Height="15" Attributes="196611" Text="[ProductName] [ProductVersion]" TextStyle="[ManufacturerFontSmall]" Order="400" TextLocId="-"/>
+    <ROW Dialog_="AboutDlg" Control="ProducVersionText" Type="Text" X="14" Y="40" Width="200" Height="15" Attributes="196611" Text="&#169; [AI_CURRENT_YEAR] [Manufacturer]" TextStyle="[ManufacturerFontSmall]" Order="500" TextLocId="-"/>
+    <ROW Dialog_="AboutDlg" Control="LicenseAgreementLink" Type="Hyperlink" X="21" Y="63" Width="193" Height="15" Attributes="196611" TextStyle="[HyperlinkFont]" Order="600" TextLocId="AppInstaller.Control.Text.LicenseAgreementLink"/>
+    <ROW Dialog_="AboutDlg" Control="Hyperlink" Type="Hyperlink" X="21" Y="80" Width="193" Height="15" Attributes="65539" TextStyle="[HyperlinkFont]" Property="AiReadmeLink" TextLocId="Control.Text.ExitDialog#ViewReadmeHyperlink" Order="700"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ManufacturerFont]" Order="200" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Bitmap_1" Type="Bitmap" X="404" Y="15" Width="6" Height="8" Attributes="0" Text="[AppLogoIconDark]" Order="400"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Next" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="500" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Description" Type="Text" X="16" Y="158" Width="454" Height="60" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="Control.Text.AdminWelcomeDlg#Description"/>
+	<ROW Dialog_="AdminWelcomeDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton"/>	
+    <ROW Dialog_="CancelDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="330" Height="120" Attributes="1" Text="[Background]" Order="100"/>
+    <ROW Dialog_="CancelDlg" Control="Text" Type="Text" X="68" Y="26" Width="234" Height="30" Attributes="196611" TextStyle="[ManufacturerFont]" Order="200" TextLocId="Control.Text.CancelDlg#Text"/>
+    <ROW Dialog_="CancelDlg" Control="No" Type="ImageButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="300" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#No"/>
+    <ROW Dialog_="CancelDlg" Control="Yes" Type="ImageButton" X="136" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#Yes"/>
+    <ROW Dialog_="CancelDlg" Control="InfoIcon" Type="Bitmap" X="17" Y="15" Width="38" Height="52" Attributes="1" Text="[InfoIcon]" Order="500"/>
+    <ROW Dialog_="ErrorDlg" Control="ErrorText" Type="Text" X="68" Y="26" Width="234" Height="30" Attributes="196611" TextStyle="[ManufacturerFont]" Order="100" TextLocId="Control.Text.ErrorDlg#ErrorText" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="R" Type="PushButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonText_Retry]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="O" Type="PushButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonText_OK]" Order="300" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="Y" Type="ImageButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#Yes"/>
+    <ROW Dialog_="ErrorDlg" Control="ErrorBitmap" Type="Bitmap" X="17" Y="15" Width="38" Height="52" Attributes="1" Text="[InfoIcon]" Order="500" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="A" Type="PushButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonText_Cancel]" Order="600" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="C" Type="PushButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonText_Cancel]" Order="700" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="I" Type="PushButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonText_Ignore]" Order="800" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ErrorDlg" Control="N" Type="ImageButton" X="224" Y="71" Width="78" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="900" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#No"/>
+    <ROW Dialog_="ExitDialog" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ExitDialog" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="200" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="ExitDialog" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="ExitDialog" Control="Finish" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData.ExitDialog#Finish"/>
+    <ROW Dialog_="ExitDialog" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="500" TextLocId="AppInstaller.Control.Text.ExitDialog#Title"/>
+    <ROW Dialog_="ExitDialog" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="600" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="ExitDialog" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="700"/>
+    <ROW Dialog_="ExitDialog" Control="LaunchBtn" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="800" ExtType="ImageButton" ExtDataLocId="AppInstaller.Control.Text.LaunchBtn"/>
+	<ROW Dialog_="ExitDialog" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="ExitDialog" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="ExitDialog" Control="ViewReadmeText" Type="Text" X="34" Y="218" Width="220" Height="20" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1100" TextLocId="Control.Text.ExitDialog#ViewReadmeText"/>
+    <ROW Dialog_="ExitDialog" Control="ViewReadmeCheckBox" Type="ImageCheckBox" X="16" Y="218" Width="12" Height="15" Attributes="3" Text="[CheckboxImage]" TextStyle="[ManufacturerFont]" Property="VIEWREADME" Order="1200" ExtType="ImageCheckBox" ExtDataLocId=""/>
+	<ROW Dialog_="FatalError" Control="Cancel" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonText_Cancel]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="FatalError" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="FatalError" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="FatalError" Control="Finish" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData.ExitDialog#Finish"/>
+    <ROW Dialog_="FatalError" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="500" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="FatalError" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="600" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="FatalError" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="700"/>
+	<ROW Dialog_="FatalError" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="FatalError" Control="Description1" Type="Text" X="16" Y="158" Width="454" Height="40" Attributes="196611" TextStyle="[DescriptionFont]" Order="900" TextLocId="Control.Text.FatalError#Description1"/>
+	<ROW Dialog_="FatalError" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="FilesInUse" Control="Exit" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="3" Text="[ButtonImage]" TextStyle="[ManufacturerFont]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Exit]"/>
+	<ROW Dialog_="FilesInUse" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="200"/>
+    <ROW Dialog_="FilesInUse" Control="Retry" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="300" ExtType="ImageButton" ExtData="[ButtonText_Retry]"/>
+    <ROW Dialog_="FilesInUse" Control="Ignore" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" ExtType="ImageButton" ExtData="[ButtonText_Ignore]"/>
+    <ROW Dialog_="FilesInUse" Control="Text" Type="Text" X="16" Y="100" Width="464" Height="21" Attributes="196611" TextStyle="[DescriptionFont]" Order="500" TextLocId="Control.Text.MsiRMFilesInUse#Text"/>
+    <ROW Dialog_="FilesInUse" Control="List" Type="ListBox" X="16" Y="121" Width="458" Height="77" Attributes="7" TextStyle="ListFontDark" Property="FileInUseProcess" Order="600"/>
+    <ROW Dialog_="FilesInUse" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="FilesInUse" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="FilesInUse" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+	<ROW Dialog_="FilesInUse" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="FilesInUse" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton" />
+	<ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="200"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="OK" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="300" ExtType="ImageButton" ExtData="[ButtonText_OK]"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Text" Type="Text" X="16" Y="93" Width="458" Height="15" Attributes="196611" TextStyle="[DescriptionFont]" Order="400" TextLocId="Control.Text.MsiRMFilesInUse#Text"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="List" Type="ListBox" X="16" Y="113" Width="458" Height="41" Attributes="7" TextStyle="ListFontDark" Property="FileInUseProcess" Order="500"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Options" Type="RadioButtonGroup" X="16" Y="158" Width="458" Height="47" Attributes="3" Property="AppsShutdownOption" Order="600"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+	<ROW Dialog_="MsiRMFilesInUse" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton" />
+	<ROW Dialog_="OutOfDiskDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="100"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="OK" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="200" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#OK"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="VolumeList" Type="VolumeCostList" X="16" Y="127" Width="458" Height="79" Attributes="393223" TextStyle="ListFontDark" Order="300" TextLocId="Control.Text.OutOfDiskDlg#VolumeList"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="Text" Type="Text" X="16" Y="94" Width="458" Height="30" Attributes="196611" TextStyle="[DescriptionFont]" Order="400" TextLocId="Metro.Control.Text.OutOfDiskDlg#Text"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="500" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="600" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="700"/>
+	<ROW Dialog_="OutOfDiskDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="900" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="OutOfRbDiskDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="100"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="No" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="200" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#No"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Yes" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="300" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData#Yes"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Description" Type="Text" X="16" Y="94" Width="458" Height="57" Attributes="196611" TextStyle="[DescriptionFont]" Order="500" TextLocId="AppInstaller.Control.Text.OutOfRbDiskDlg#Description"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="VolumeList" Type="VolumeCostList" X="16" Y="151" Width="458" Height="54" Attributes="393223" TextStyle="ListFontDark" Order="600" TextLocId="Control.Text.OutOfDiskDlg#VolumeList"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+	<ROW Dialog_="OutOfRbDiskDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="OutOfRbDiskDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton"/>   
+    <ROW Dialog_="PatchWelcomeDlg" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ManufacturerFont]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+	<ROW Dialog_="PatchWelcomeDlg" Control="Next" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="Description" Type="Text" X="16" Y="158" Width="454" Height="30" Attributes="196611" TextStyle="[DescriptionFont]" Order="500" TextLocId="Control.Text.PatchWelcomeDlg#DescriptionNoClose"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800"/>
+	<ROW Dialog_="PatchWelcomeDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="PrepareDlg" Control="Cancel" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonText_Cancel]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="PrepareDlg" Control="Next" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Next]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="PrepareDlg" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="300" TextLocId="-" Options="1"/>
+	<ROW Dialog_="PrepareDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="400"/>
+    <ROW Dialog_="PrepareDlg" Control="ActionText" Type="Text" X="16" Y="158" Width="458" Height="35" Attributes="196611" TextStyle="[ManufacturerFont]" Order="500"/>
+    <ROW Dialog_="PrepareDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="PrepareDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="PrepareDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800"/>
+	<ROW Dialog_="PrepareDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="PrepareDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="ProgressDlg" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ProgressDlg" Control="Next" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Next]" Order="200" TextLocId="-" Options="1"/>
+	<ROW Dialog_="ProgressDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="ProgressDlg" Control="Cancel" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="ProgressDlg" Control="ActionText" Type="Text" X="100" Y="158" Width="374" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="500"/>
+    <ROW Dialog_="ProgressDlg" Control="ProgressBar" Type="StyledProgressBar" X="16" Y="179" Width="458" Height="2" Attributes="65537" Text="ProgressImage.png" Order="600" ExtType="StyledProgressBar"/>
+    <ROW Dialog_="ProgressDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="Control.Text.ProgressDlg#Title"/>
+    <ROW Dialog_="ProgressDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="ProgressDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+    <ROW Dialog_="ProgressDlg" Control="StatusLabel" Type="Text" X="16" Y="158" Width="458" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="Control.Text.ProgressDlg#StatusLabel"/>
+	<ROW Dialog_="ProgressDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1100" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="ProgressDlg" Control="LaunchCheckBox" Type="ImageCheckBox" X="16" Y="218" Width="220" Height="15" Attributes="3" Text="[CheckboxImage]" TextStyle="[ManufacturerFont]" Property="AiSkipExitDlg" Order="1200" ExtType="ImageCheckBox" ExtDataLocId="AppInstaller.Control.Text.LaunchWhenReadyCheckbox"/>
+    <ROW Dialog_="ProgressDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1300" Options="1" ExtType="ImageButton"/>
+	<ROW Dialog_="ResumeDlg" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ResumeDlg" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonImage]" TextStyle="[ManufacturerFont]" Order="200" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="ResumeDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="ResumeDlg" Control="Install" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData.VerifyReadyDlg#InstallButton"/>
+    <ROW Dialog_="ResumeDlg" Control="Description" Type="Text" X="16" Y="158" Width="454" Height="30" Attributes="196611" TextStyle="[DescriptionFont]" Order="500" TextLocId="Metro.Control.Text.ResumeDlg#Description"/>
+    <ROW Dialog_="ResumeDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="ResumeDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="ResumeDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800"/>
+	<ROW Dialog_="ResumeDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="ResumeDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>   
+    <ROW Dialog_="UserExit" Control="Back" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="0" Text="[ButtonText_Back]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="UserExit" Control="Cancel" Type="PushButton" X="0" Y="0" Width="0" Height="0" Attributes="2" Text="[ButtonText_Cancel]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="UserExit" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="300"/>
+    <ROW Dialog_="UserExit" Control="Finish" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="400" Options="1" ExtType="ImageButton" ExtDataLocId="Metro.Control.ExtData.ExitDialog#Finish"/>
+    <ROW Dialog_="UserExit" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="500" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="UserExit" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="600" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="UserExit" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="700"/>
+	<ROW Dialog_="UserExit" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+    <ROW Dialog_="UserExit" Control="Description1" Type="Text" X="16" Y="158" Width="454" Height="40" Attributes="196611" TextStyle="[DescriptionFont]" Order="900" TextLocId="Control.Text.UserExit#Description1"/>
+	<ROW Dialog_="UserExit" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1000" Options="1" ExtType="ImageButton"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+  	<ROW Dialog_="AboutDlg" Control_="No" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control_="Next" Event="[InstallMode]" Argument="Server Image" Condition="1" Ordering="100"/>
+	<ROW Dialog_="AdminWelcomeDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="CancelDlg" Control_="No" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+    <ROW Dialog_="CancelDlg" Control_="Yes" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="CancelDlg" Control_="Yes" Event="[AiShowUserExit]" Argument="1" Condition="1" Ordering="200"/>
+    <ROW Dialog_="ErrorDlg" Control_="R" Event="EndDialog" Argument="ErrorRetry" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="O" Event="EndDialog" Argument="ErrorOk" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="Y" Event="EndDialog" Argument="ErrorYes" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="A" Event="EndDialog" Argument="ErrorAbort" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="C" Event="EndDialog" Argument="ErrorCancel" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="I" Event="EndDialog" Argument="ErrorIgnore" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ErrorDlg" Control_="N" Event="EndDialog" Argument="ErrorNo" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ExitDialog" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_ViewReadme" Condition="(VIEWREADME=1) AND (AI_INSTALL OR AI_PATCH)" Ordering="100"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="EndDialog" Argument="Return" Condition="1" Ordering="200"/>	
+	<ROW Dialog_="ExitDialog" Control_="LaunchBtn" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ExitDialog" Control_="LaunchBtn" Event="DoAction" Argument="AI_LaunchApp" Condition="(AI_INSTALL OR AI_PATCH OR AI_MAINT)" Ordering="200"/>
+	<ROW Dialog_="ExitDialog" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_SHOW_LOG" Condition="(MsiLogFileLocation AND AI_LOG_CHECKBOX)" Ordering="200"/>
+	<ROW Dialog_="FatalError" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="FilesInUse" Control_="Retry" Event="EndDialog" Argument="Retry" Condition="1" Ordering="100"/>
+    <ROW Dialog_="FilesInUse" Control_="Ignore" Event="EndDialog" Argument="Ignore" Condition="1" Ordering="100"/>
+    <ROW Dialog_="FilesInUse" Control_="Exit" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="FilesInUse" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control_="OK" Event="RMShutdownAndRestart" Argument="0" Condition="AppsShutdownOption = &quot;All&quot;" Ordering="100"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control_="OK" Event="EndDialog" Argument="Return" Condition="1" Ordering="200"/>
+	<ROW Dialog_="MsiRMFilesInUse" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="OutOfDiskDlg" Control_="OK" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+	<ROW Dialog_="OutOfDiskDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control_="No" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control_="Yes" Event="EnableRollback" Argument="False" Condition="1" Ordering="100"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control_="Yes" Event="EndDialog" Argument="Return" Condition="1" Ordering="200"/>
+	<ROW Dialog_="OutOfRbDiskDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="ReinstallMode" Argument="ecmus" Condition="AI_PATCH" Ordering="100"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="Reinstall" Argument="All" Condition="AI_PATCH" Ordering="200"/>
+	<ROW Dialog_="PatchWelcomeDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="PrepareDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="PrepareDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="ProgressDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+	<ROW Dialog_="ProgressDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="ResumeDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="100"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EnableRollback" Argument="False" Condition="OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="200"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="(OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;)" Ordering="300"/>
+	<ROW Dialog_="ResumeDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="UserExit" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlConditionComponent">
+	<ROW Dialog_="ExitDialog" Control_="LaunchBtn" Action="Hide" Condition="((NOT AI_INSTALL) AND (NOT AI_PATCH) AND (NOT AI_MAINT)) OR ((CTRLS &lt;&gt; 2) AND (CTRLS &lt;&gt; 3))"/>
+	<ROW Dialog_="ExitDialog" Control_="ViewReadmeCheckBox" Action="Hide" Condition="(((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS &lt;&gt; 1) AND (CTRLS &lt;&gt; 3))) OR AiReadmeLink"/>
+    <ROW Dialog_="ExitDialog" Control_="ViewReadmeText" Action="Hide" Condition="(((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS &lt;&gt; 1) AND (CTRLS &lt;&gt; 3))) OR AiReadmeLink"/>
+    <ROW Dialog_="AboutDlg" Control_="Hyperlink" Action="Hide" Condition="((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR NOT AiReadmeLink"/>
+	<ROW Dialog_="ProgressDlg" Control_="LaunchCheckBox" Action="Hide" Condition="((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS &lt;&gt; 2) AND (CTRLS &lt;&gt; 3))"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="AboutDlg" HCentering="50" VCentering="50" Width="326" Height="116" Attributes="7" Title="" Control_Default="No" Control_Cancel="No"/>
+    <ROW Dialog="AdminWelcomeDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.AdminWelcomeDlg"/>
+    <ROW Dialog="CancelDlg" HCentering="50" VCentering="50" Width="330" Height="120" Attributes="7" Control_Default="No" Control_Cancel="No" TitleLocId="Dialog.CancelDlg"/>
+    <ROW Dialog="ErrorDlg" HCentering="50" VCentering="50" Width="330" Height="120" Attributes="65539" TitleLocId="Dialog.ErrorDlg"/>
+    <ROW Dialog="ExitDialog" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Finish" Control_Cancel="Finish" TitleLocId="Dialog.ExitDialog"/>
+    <ROW Dialog="FatalError" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Finish" Control_Cancel="Finish" TitleLocId="Dialog.FatalError"/>
+    <ROW Dialog="FilesInUse" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="23" Control_Default="Retry" Control_Cancel="Retry" TitleLocId="Dialog.FilesInUse"/>
+    <ROW Dialog="MsiRMFilesInUse" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="23" Control_Default="OK" Control_Cancel="Cancel" TitleLocId="Dialog.MsiRMFilesInUse"/>
+    <ROW Dialog="OutOfDiskDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="OK" Control_Cancel="OK" TitleLocId="Dialog.OutOfDiskDlg"/>
+    <ROW Dialog="OutOfRbDiskDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="No" Control_Cancel="No" TitleLocId="Dialog.OutOfRbDiskDlg"/>
+    <ROW Dialog="PatchWelcomeDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.PatchWelcomeDlg"/>
+    <ROW Dialog="PrepareDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="5" Control_Default="Cancel" Control_Cancel="Cancel" TitleLocId="Dialog.PrepareDlg"/>
+    <ROW Dialog="ProgressDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="5" Control_Default="Cancel" Control_Cancel="Cancel" TitleLocId="Dialog.ProgressDlg"/>
+    <ROW Dialog="ResumeDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Install" Control_Cancel="Cancel" TitleLocId="Dialog.ResumeDlg"/>
+    <ROW Dialog="UserExit" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Finish" Control_Cancel="Finish" TitleLocId="Dialog.UserExit"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEventMappingComponent">
+    <ROW Dialog_="PrepareDlg" Control_="ActionText" Event="ActionText" Attribute="Text"/>
+    <ROW Dialog_="ProgressDlg" Control_="ActionText" Event="ActionText" Attribute="Text"/>
+    <ROW Dialog_="ProgressDlg" Control_="ProgressBar" Event="SetProgress" Attribute="Progress"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRadioButtonComponent">
+    <ROW Property="AppsShutdownOption" Order="1" Value="All" X="2" Y="5" Width="448" Height="15" TextStyle="[DescriptionFont]" TextLocId="RadioButton.Text.AppsShutdownOption#1"/>
+    <ROW Property="AppsShutdownOption" Order="2" Value="None" X="2" Y="25" Width="448" Height="15" TextStyle="[DescriptionFont]" TextLocId="RadioButton.Text.AppsShutdownOption#2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiTextStyleComponent">
+	<ROW TextStyle="DescriptionFontLight" FaceName="Segoe UI" Size="10" Color="0" StyleBits="0"/>
+	<ROW TextStyle="DescriptionFontDark" FaceName="Segoe UI" Size="10" Color="16777215" StyleBits="0"/>
+    <ROW TextStyle="DlgFontBold8" FaceName="Segoe UI" Size="8" Color="0" StyleBits="1"/>
+    <ROW TextStyle="ImageButtonLight" FaceName="Segoe UI" Size="11" Color="16777215" StyleBits="0"/>
+    <ROW TextStyle="ManufacturerDark" FaceName="Segoe UI" Size="11" Color="16777215" StyleBits="0"/>
+    <ROW TextStyle="ManufacturerLight" FaceName="Segoe UI" Size="11" Color="0" StyleBits="0"/>
+    <ROW TextStyle="ProductNameTitleDark" FaceName="Segoe UI" Size="20" Color="16777215" StyleBits="1"/>
+    <ROW TextStyle="ProductNameTitleLight" FaceName="Segoe UI" Size="20" Color="4473924" StyleBits="1"/>
+	<ROW TextStyle="ProductNameTitleDarkSmall" FaceName="Segoe UI" Size="14" Color="16777215" StyleBits="1"/>
+    <ROW TextStyle="ProductNameTitleLightSmall" FaceName="Segoe UI" Size="14" Color="4473924" StyleBits="1"/>
+	<ROW TextStyle="ManufacturerDarkSmall" FaceName="Segoe UI" Size="9" Color="16777215" StyleBits="0"/>
+    <ROW TextStyle="ManufacturerLightSmall" FaceName="Segoe UI" Size="9" Color="0" StyleBits="0"/>
+	<ROW TextStyle="MetroLinkLight" FaceName="Segoe UI" Size="11" Color="8529769" StyleBits="0"/>
+	<ROW TextStyle="MetroLinkDark" FaceName="Segoe UI" Size="11" Color="16040432" StyleBits="0"/>
+	<ROW TextStyle="ListFontDark" FaceName="Segoe UI" Size="11" Color="0" StyleBits="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiConditionedPropertyComponent">
+    <ROW Condition="DarkTheme" Property="ProductNameTitleFontSmall" Value="{\ProductNameTitleDarkSmall}"/>
+    <ROW Condition="DarkTheme" Property="ProductNameTitleFont" Value="{\ProductNameTitleDark}"/>
+    <ROW Condition="DarkTheme" Property="HyperlinkFont" Value="{\MetroLinkDark}"/>
+    <ROW Condition="DarkTheme" Property="ManufacturerFontSmall" Value="{\ManufacturerDarkSmall}"/>
+    <ROW Condition="DarkTheme" Property="ManufacturerFont" Value="{\ManufacturerDark}"/>
+    <ROW Condition="DarkTheme" Property="DescriptionFont" Value="{\DescriptionFontDark}"/>
+    <ROW Condition="DarkTheme" Property="DefaultUIFont" Value="ManufacturerDark"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_CLOSEBTN_BASE_COLOR" Value="#202020"/>
+    <ROW Condition="DarkTheme" Property="AboutBtnIcon" Value="aboutbtndark"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_MINBTN_BASE_COLOR" Value="#202020"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_CLOSEBTN_BORDER_COLORS" Value="#202020;#e81123;#202020;#202020;#f1707a"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_CLOSEBTN_COLORS" Value="#202020;#e81123;;#f1707a"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_MINBTN_BORDER_COLORS" Value="#202020;#cecece;#202020;#202020;#898989"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_MINBTN_COLORS" Value="#202020;#cecece;;#898989"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_FRAME_BASE_COLOR" Value="#202020"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_FRAME_BORDER1_COLORS" Value="#202060"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_FRAME_BORDER2_COLORS" Value="#202060"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_FRAME_BORDER3_COLORS" Value="#202060"/>
+    <ROW Condition="DarkTheme" Property="AI_CF_FRAME_CAPTION2_COLORS" Value="#202020;#202020;#202060;#202060;#202060;#202060;#202060;#202060"/>
+    <ROW Condition="DarkTheme" Property="ButtonImage" Value="buttonimgsdark"/>
+    <ROW Condition="DarkTheme" Property="CheckboxImage" Value="checkboximgsdark"/>
+    <ROW Condition="DarkTheme" Property="AiWinUIRequestedTheme" Value="Dark"/>
+    <ROW Condition="DarkTheme" Property="AI_ControlVisualStyleDark" Value="2960685;4276545;6776679;16176031"/>
+    <ROW Condition="DarkTheme" Property="AI_CONTROL_VISUAL_STYLE_EX" Value="1513239;3026478;3026478"/>
+	<ROW Condition="DarkTheme" Property="AI_CONTROL_VISUAL_STYLE" Value="[AI_CONTROL_VISUAL_STYLE_FLAT]"/>
+    <ROW Condition="DarkTheme" Property="Background" Value="[BackgroundDark]"/>
+    <ROW Condition="DarkTheme" Property="AppLogoIcon" Value="[AppLogoIconDark]"/>
+    <ROW Condition="DarkTheme" Property="CustomInstallBtn" Value="[CustomInstallBtnDark]"/>
+	<ROW Condition="DarkTheme" Property="TaskBarIcon" Value="[TaskBarIconDark]"/>
+    <ROW Condition="VersionNT64&gt;=1100" Property="AI_CF_TYPE" Value="0"/>
+    <ROW Condition="NOT MSICLIENTUSESEMBEDDEDUI" Property="InfoIconMsi" Value="infoIconMsi"/>
+  </COMPONENT>
+</FRAGMENT>

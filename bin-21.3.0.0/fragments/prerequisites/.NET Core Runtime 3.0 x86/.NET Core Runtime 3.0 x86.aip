@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.7" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="F34E6D6D3D45A083887BE1794666D0" DisplayName=".NET Core Runtime 3.0.0 x86" VersionMin="3.0"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/ffc76eb1-6293-46e9-8d31-ad804995f870/ccf2eeafb0bdf336a092bfdd52a0dfca/dotnet-runtime-3.0.0-win-x86.exe"
+      Location="1" ExactSize="23190184" MD5="0b5fff91ab3dd889db01cc4e9ca0429e"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET Core 3.0"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="F34E6D6D3D45A083887BE1794666D0Microsoft.NETCore.App" Prereq="F34E6D6D3D45A083887BE1794666D0" SearchType="12"
+      SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\sharedfx\Microsoft.NETCore.App" VerMin="3.0.0"
+      Order="1" Property="PreReqSearch_F34E6D6D3D45A083887BE1794666D0"/>
+  </COMPONENT>
+</FRAGMENT>

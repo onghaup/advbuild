@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="E25D6A62194038942640BDE651049C" DisplayName="ASP.NET Core Runtime 6.0.25 x64" VersionMin="6.0"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/dc41dbfc-0cb2-453b-8e13-b96df87ec639/80632cb579c5dd86842224b9e6304221/aspnetcore-runtime-6.0.25-win-x64.exe"
+      Location="1" ExactSize="9054288" MD5="1bc344fd07fc44baa0b530c4b577d073"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="fx" TargetName="ASP.NET Core 6.0"/>
+    <ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="E25D6A62194038942640BDE651049CASP.NETCore" Prereq="E25D6A62194038942640BDE651049C" SearchType="1"
+      SearchString="HKLM\SOFTWARE\Microsoft\ASP.NET Core\Shared Framework\v6.0" VerMin="6.0.25"
+      Order="1" Property="PreReqSearch_E25D6A62194038942640BDE651049C"/>
+  </COMPONENT>
+</FRAGMENT>

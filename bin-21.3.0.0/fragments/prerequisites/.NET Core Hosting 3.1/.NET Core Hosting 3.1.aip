@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C5BED30F1C6624CF1A" DisplayName=".NET Core IIS Hosting 3.1.32" VersionMin="3.1"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/6744eb9d-dcd4-4386-9d87-b03b70fc58ce/818fadf3f3d919c17ba845b2195bfd9b/dotnet-hosting-3.1.32-win.exe"
+      Location="1" ExactSize="66237160" MD5="86946ba80baf91f465883475888438de"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET Core 3.1"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C5BED30F1C6624CF1ANETCore" Prereq="C5BED30F1C6624CF1A" SearchType="1"
+      SearchString="HKLM\SOFTWARE\Microsoft\Updates\.NET Core" VerMin="3.1.32"
+      Order="1" Property="PreReqSearch_C5BED30F1C6624CF1A"/>
+  </COMPONENT>
+</FRAGMENT>

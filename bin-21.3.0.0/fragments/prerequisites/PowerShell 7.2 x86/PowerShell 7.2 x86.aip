@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.9" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="CE0851AF059C4FCC80DAD97676F7BC65" DisplayName="PowerShell 7.2.0 x86" VersionMin="7.2"
+      SetupFileUrl="https://github.com/PowerShell/PowerShell/releases/download/v7.2.0/PowerShell-7.2.0-win-x86.msi"
+      Location="1" ExactSize="96714752" MD5="524b12d73a35adee1b6196ab00d62255"
+      WinNTVersions="Windows 7 RTM x86"
+      WinNT64Versions="Windows 7 RTM x64"
+      BasicUiComLine="/qb"
+      NoUiComLine="/qn"
+      Operator="1" Options="f" TargetName="PowerShell 7.2"/>
+    <ATTRIBUTE name="GroupName" value="Windows Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CE0851AF059C4FCC80DAD97676F7BC65SemanticVersion" Prereq="CE0851AF059C4FCC80DAD97676F7BC65" SearchType="2"
+      SearchString="HKLM\Software\Microsoft\PowerShellCore\InstalledVersions\1d00683b-0f84-4db8-a64f-2f98ad42fe06\SemanticVersion" VerMin="7.2.0"
+      Order="1" Property="PreReqSearch_CE0851AF059C4FCC80DAD97676F7BC65"/>
+  </COMPONENT>
+</FRAGMENT>

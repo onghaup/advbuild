@@ -1,0 +1,161 @@
+{
+    "ProcessPath": [
+        {
+            "Path": "D:\\advinst\\win\\Debug\\bin\\x86\\advinst.exe",
+            "ExpectedReturnCode": 1,
+            "MainWindowSize": {
+                "Width": 1820,
+                "Height": 1036
+            },
+            "RunPath": [
+               
+
+                { "ActionText": "Welcome, the Assistant will guide you through Advanced Installer's GUI. Just follow the red rectangle or hit \"Continue\" when you are ready.", "Action": "Prompt" },
+                { "WaitTime": 15000, "Action": "Wait"},
+                { "ActionText": "Let's start by setting your product name, from Product Details page.", "Action": "Prompt" },
+                {
+                  "WindowClass": "AI_ThemedPaneContainer/#32770/SysTabControl32/#32770/AI_SciCtrl",
+                  "ControlID": 11382,
+                  "Action": "HighLightRect"
+                },
+                { "WaitTime": 60000, "Action": "Wait"},
+                { "ActionText": "Also, specify your company name. These details will show up in Control Panel.", "Action": "Prompt" },
+                {
+                  "WindowClass": "AI_ThemedPaneContainer/#32770/SysTabControl32/#32770/AI_SciCtrl",
+                  "ControlID": 11384,
+                  "Action": "HighLightRect"
+                },
+                { "WaitTime": 60000, "Action": "Wait"},
+                { "ActionText": "Let's go to Builds page.", "Action": "Prompt" },
+                {
+                    "WindowClass": "AiMainFrame/AI_SplitterWindow/AI_SplitterWindow/ATL:[0-9A-F]+",
+                    "AccessibleName": "Builds",
+                    "AccessibleType": "List/ListItem/StaticText",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowClass": "AI_SplitterWindow/AI_ThemedPaneContainer/AI_ThemedSplitterWindowImpl/#32770/SysTabControl32",
+                    "ControlID": 15342,
+                    "AccessibleName": "Configuration",
+                    "AccessibleType": "Window/PageTabList/PageTab",
+                    "SkipCount": 3,
+                    "Action": "ItemExists"
+                },
+                { "ActionText": "Here, you can select the package type you want to build. Hit \"Continue\" when you are ready.", "Action": "Prompt" },
+                {
+                    "WindowClass": "AI_SplitterWindow/AI_ThemedPaneContainer/AI_ThemedSplitterWindowImpl/#32770/SysTabControl32/#32770",
+                    "AccessibleName": "Single MSI (resources inside)",
+                    "AccessibleType": "RadioButton",
+                    "Action": "HighLightRect"
+                },
+                {  "WaitTime": 60000, "Action": "Wait"},
+                { "ActionText": "From Analytics page you can monitor your installations with 1 click.", "Action": "Prompt" },
+                {
+                    "WindowClass": "AiMainFrame/AI_SplitterWindow/AI_SplitterWindow/ATL:[0-9A-F]+",
+                    "AccessibleName": "Analytics",
+                    "AccessibleType": "List/ListItem/StaticText",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowText": "Track Your Application installs using Installer Analytics - The first 2 months are FREE",
+                    "WindowClass": "AI_SplitterWindow/AI_SplitterWindow/AI_ThemedPaneContainer/#32770/Button",
+                    "ControlID": 10571,
+                    "SkipCount": 3,
+                    "Action": [ "ItemExists", "HighLightRect"]
+                },
+                { "ActionText": "Try Installer Analytics for your package. The first 2 months are FREE.", "Action": "Prompt" },
+                {
+                    "WindowText": "Track Your Application installs using Installer Analytics - The first 2 months are FREE",
+                    "WindowClass": "AI_SplitterWindow/AI_SplitterWindow/AI_ThemedPaneContainer/#32770/Button",
+                    "ControlID": 10571,
+                    "Action": "IsButtonChecked"
+                },
+                { "ActionText": "Save the project using the \"Save\" button on the ribbon.", "Action": "Prompt" },
+                {
+                    "WindowClass": "UIRibbonCommandBarDock/UIRibbonCommandBar/UIRibbonWorkPane/NUIPane/NetUIHWND",
+                    "AccessibleName": "Save",
+                    "AccessibleType": "PushButton",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowText": "&Save",
+                    "WindowClass": "#32770/Button",
+                    "Action": "ItemExists"
+                },
+                { "ActionText": "Type your new project name and press the \"Save\" button.", "Action": "Prompt" },
+                {
+                    "WindowText": "&Save",
+                    "WindowClass": "#32770/Button",
+                    "Action": [ "HighLightRect", "Wait" ]
+                },
+                {"Action": "DisableSkip"},
+                { "ActionText": "Now you can add your application files. Go to Files and Folders page.", "Action": "Prompt" }, 
+                {
+                    "WindowClass": "AiMainFrame/AI_SplitterWindow/AI_SplitterWindow/ATL:[0-9A-F]+",
+                    "AccessibleName": "Files and Folders",
+                    "AccessibleType": "List/ListItem/StaticText",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowClass": "AI_ThemedPaneContainer/AI_SplitterWindow/AI_SplitterWindow/AI_ThemedPaneContainer/SysTreeView32",
+                    "AccessibleName": "Application Folder",
+                    "AccessibleType": "Outline/OutlineItem[@name='Target Computer']/OutlineItem",
+                    "Action": ["ItemExists", "HighLightRect"]
+                },
+                { "ActionText": "First, select the target folder where you want to add the file, for example \"Application Folder\"", "Action": "Prompt" },
+                {
+                    "WindowClass": "AI_ThemedPaneContainer/AI_SplitterWindow/AI_SplitterWindow/AI_ThemedPaneContainer/SysTreeView32",
+                    "AccessibleName": "Application Folder",
+                    "AccessibleType": "Outline/OutlineItem[@name='Target Computer']/OutlineItem[@State='selected']",
+                    "Action": "ItemExists"
+                },
+                { "ActionText": "Click the \"Add Folder\" button from the ribbon toolbar.", "Action": "Prompt" },
+                {
+                    "WindowClass": "UIRibbonCommandBarDock/UIRibbonCommandBar/UIRibbonWorkPane/NUIPane/NetUIHWND",
+                    "AccessibleName": "Add Folder",
+                    "AccessibleType": "Toolbar[@name='Add']/PushButton",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowText": "Select Folder",
+                    "WindowClass": "#32770/Button",
+                    "Action": "ItemExists"
+                },
+                { "ActionText": "Select the folder containing your application files and press \"Select Folder\" button.", "Action": "Prompt" },
+                {
+                    "WindowText": "Select Folder",
+                    "WindowClass": "#32770/Button",
+                    "Action": [ "HighLightRect", "Wait" ]
+                },
+                {"Action": "EnableSkip"},
+                { "ActionText": "After adding the files, you can create a shortcut. Select your application's EXE file and press \"New Shortcut To\" from the ribbon toolbar.", "Action": "Prompt" },
+                {
+                    "WindowClass": "UIRibbonCommandBarDock/UIRibbonCommandBar/UIRibbonWorkPane/NUIPane/NetUIHWND",
+                    "AccessibleName": "New Shortcut To",
+                    "AccessibleType": "Grouping[@name='New Shortcut To']/SplitButton",
+                    "Action": "HighLightRect"
+                },
+                {
+                    "WindowText": "Hot Key:",
+                    "WindowClass": "#32770/Static",
+                    "SkipCount": 3,
+                    "Action": "ItemExists"
+                },
+                { "ActionText": "Customize your shortcut properties and press \"OK\".", "Action": "Prompt" },
+                {
+                    "WindowText": "OK",
+                    "WindowClass": "AiMainFrame/#32770/Button",
+                    "Action": ["HighLightRect","Wait"]
+                },
+				{"Action": "DisableSkip"},
+                { "ActionText": "Now you can build your project, click the \"Build\" button or press \"F7\".", "Action": "Prompt" },
+                { "WindowClass": "NetUIHWND", "AccessibleName": "Build", "Action": "HighLightRect" },
+                { "WindowText": "Build finished successfully.", "Action": "ItemExists" },
+                { "Action": "HideSkip"},
+                { "Action": "HideHighlight"},
+                { "ActionText": "Congratulations! Your new setup package is ready to be installed, press \"F5\" to launch it.", "Action": "Prompt" },
+                { "ActionWaitTime": 15000, "Action": "CloseGUI"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.7" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="ABA121137E454F6C815A1647D0B2CF14" DisplayName="Visual Studio Tools for Office 4.0 Runtime" VersionMin="10.0"
+      SetupFileUrl="https://download.microsoft.com/download/C/A/8/CA86DFA0-81F3-4568-875A-7E7A598D4C1C/vstor_redist.exe"
+      Location="1" ExactSize="40399512" MD5="3472e52f9641fc4bcc471b8cbf897223"
+      WinNTVersions=""
+      WinNT64Versions=""
+      NoUiComLine="/q"
+      Operator="1" Options="f" TargetName="VSTO 4.0 Runtime?vstor_redist~r60828.exe"/>
+    <ATTRIBUTE name="GroupName" value="Visual Studio"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="ABA121137E454F6C815A1647D0B2CF14Version" Prereq="ABA121137E454F6C815A1647D0B2CF14" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\VSTO Runtime Setup\v4R\Version" VerMin="10.0.60828"
+      Order="1" Property="PreReqSearch_ABA121137E454F6C815A1647D0B2CF14"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="DDFCD917B9449CBCE7F783A2FC7AF0" DisplayName=".NET Desktop Runtime 8.0.0 x86" VersionMin="8.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/f9e3b581-059d-429f-9f0d-1d1167ff7e32/bd7661030cd5d66cd3eee0fd20b24540/windowsdesktop-runtime-8.0.0-win-x86.exe"
+	  Location="1" ExactSize="53485016" MD5="e8b63b4d3814a53e61d9d5d2d6c5a325"
+	  WinNTVersions="Windows Vista x86, Windows Server 2008 x86, Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+	  WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 RTM x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="f" TargetName=".NET 8.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="DDFCD917B9449CBCE7F783A2FC7AF0SystemFolderfile.dll" Prereq="DDFCD917B9449CBCE7F783A2FC7AF0" SearchType="14"
+	  SearchString="[ProgramFilesFolder]dotnet\shared\Microsoft.WindowsDesktop.App" VerMin="8.0.0"
+	  Order="1" Property="PreReqSearch_DDFCD917B9449CBCE7F783A2FC7AF0"/>
+  </COMPONENT>
+</FRAGMENT>

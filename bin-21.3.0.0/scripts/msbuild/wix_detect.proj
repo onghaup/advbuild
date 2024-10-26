@@ -1,0 +1,99 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" InitialTargets="EnsureWixToolsetInstalled" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="GetProjectProperties"
+             TaskFactory="CodeTaskFactory"
+             AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >
+    <ParameterGroup>
+      <ProjectPath ParameterType="System.String" Required="true" />
+	  <ProjectName ParameterType="System.String" />
+	  <Configuration ParameterType="System.String" />
+	  <Platform ParameterType="System.String" />
+      <ProjectProperties ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />
+    </ParameterGroup>
+    <Task>
+      <Reference Include="Microsoft.Build"/>
+      <Reference Include="System.Xml"/>
+      <Using Namespace="System"/>
+      <Using Namespace="System.Collections.Generic"/>
+      <Using Namespace="Microsoft.Build.Evaluation"/>
+      <Using Namespace="Microsoft.Build.Execution"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+            var projProps = new Dictionary<string, string>();
+            if(!string.IsNullOrEmpty(Configuration))
+                projProps.Add("Configuration", Configuration);
+            if(!string.IsNullOrEmpty(Platform))	
+                projProps.Add("Platform", Platform);
+            var proj = ProjectCollection.GlobalProjectCollection.LoadProject(ProjectPath, projProps, "4.0");
+            string namePrefix = string.IsNullOrEmpty(ProjectName) ? "" : ProjectName + ".";
+            var propsFound = new List<ITaskItem>();			
+            foreach(var prop in proj.Properties)
+                propsFound.Add(new TaskItem("ProjProp", new Dictionary<string, string>() { { "Name", namePrefix+prop.Name}, {"Value", prop.EvaluatedValue }}));
+            foreach(var item in proj.Items)
+            {
+                propsFound.Add(new TaskItem("ProjItem", new Dictionary<string, string>() { { "Name", namePrefix+item.ItemType }, { "Value", item.EvaluatedInclude } }));
+                foreach (var meta in item.Metadata)
+                    propsFound.Add(new TaskItem("ProjItem", new Dictionary<string, string>() { { "Name", namePrefix+item.ItemType + "." + meta.Name }, { "Value", meta.EvaluatedValue } }));
+            }
+
+            ProjectProperties = propsFound.ToArray();
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+  
+  <UsingTask TaskName="GetTargetProperties"
+             TaskFactory="CodeTaskFactory"
+             AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >
+    <ParameterGroup>
+      <ProjectPath ParameterType="System.String" Required="true" />
+      <TargetName ParameterType="System.String" Required="true" />
+      <TargetProperties ParameterType="System.String[]" Output="true" />
+    </ParameterGroup>
+    <Task>
+      <Reference Include="Microsoft.Build"/>
+      <Reference Include="System.Xml"/>
+      <Using Namespace="System"/>
+      <Using Namespace="System.Collections.Generic"/>
+      <Using Namespace="Microsoft.Build.Evaluation"/>
+      <Using Namespace="Microsoft.Build.Execution"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+            var proj = ProjectCollection.GlobalProjectCollection.LoadProject(ProjectPath);;
+            var propsFound = new List<string>();
+            if (proj.Targets.ContainsKey(TargetName))
+                 foreach (var child in proj.Targets[TargetName].Children)
+                     if (child is ProjectPropertyGroupTaskInstance)
+                         foreach (var prop in (child as ProjectPropertyGroupTaskInstance).Properties)
+                            propsFound.Add(prop.Name);
+            TargetProperties = propsFound.ToArray();
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Import Project="<project_file_path_place_holder>" />
+
+  <Target Name="BeforeBuildScan" DependsOnTargets="BeforeBuild">
+    <GetProjectProperties ProjectPath="$(MSBuildProjectFullPath)" >
+      <Output TaskParameter="ProjectProperties" ItemName="ProjProperties"/>
+    </GetProjectProperties>
+
+    <GetTargetProperties ProjectPath="$(MSBuildProjectFullPath)" TargetName="BeforeBuild">
+      <Output TaskParameter="TargetProperties" ItemName="_TargetProperties"/>
+    </GetTargetProperties>
+
+    <ItemGroup>
+      <ProjProperties Include="ProjProp" >
+        <Name>%(_TargetProperties.Identity)</Name>
+        <Value>$(%(_TargetProperties.Identity))</Value>
+      </ProjProperties>
+    </ItemGroup>
+
+    <GetProjectProperties ProjectPath="%(ProjectReference.Identity)" ProjectName="%(ProjectReference.Name)" Configuration="$(Configuration)" Platform="$(Platform)" Condition="%(ProjectReference.Identity) != ''" >
+      <Output TaskParameter="ProjectProperties" ItemName="ProjProperties"/>
+    </GetProjectProperties>
+
+    <Message Text="###Dectected_property %(ProjProperties.Name) name_value_separator %(ProjProperties.Value)" Importance="High"/>	
+  </Target>
+
+</Project>

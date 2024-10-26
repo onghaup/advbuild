@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.0" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="CD13D44EE8EE4AC8A4B942E9E" DisplayName="OpenJDK Java Development Kit 17.0.1 x64" VersionMin="17.0"
+      SetupFileUrl="https://github.com/ojdkbuild/ojdkbuild/releases/download/java-17-openjdk-17.0.1.0.12-1/java-17-openjdk-17.0.1.0.12-1.win.x86_64.msi"
+      Location="1" ExactSize="257778624" MD5="f2c47e167fdd7becbf552aae28119eca"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64"
+      BasicUiComLine="/qb"
+      NoUiComLine="/qn"
+      Operator="0" Options="xf" TargetName="OpenJDK Java Development Kit"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CD13D44EE8EE4AC8A4B942E9EJDK" Prereq="CD13D44EE8EE4AC8A4B942E9E" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK" VerMin="17"
+      Order="1" Property="PreReqSearch_CD13D44EE8EE4AC8A4B942E9E"/>
+  </COMPONENT>
+</FRAGMENT>

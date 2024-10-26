@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="9.3" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="SharePointLogDlg" Control="Cancel" Type="ImageButton" X="0" Y="0" Width="0" Height="0" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="SharePointLogDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="200"/>
+    <ROW Dialog_="SharePointLogDlg" Control="Next" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="300" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+    <ROW Dialog_="SharePointLogDlg" Control="SharePointLog" Type="Edit" X="16" Y="109" Width="458" Height="95" Attributes="65537" Property="AI_SHAREPOINT_LOG" Order="400" TextLocId="Control.Text.SharePointLogDlg#SharePointLog" ExtAttributes="521"/>
+    <ROW Dialog_="SharePointLogDlg" Control="Back" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="500" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="SharePointLogDlg" Control="SubTitle" Type="Text" X="16" Y="87" Width="458" Height="18" Attributes="196611" TextStyle="[ManufacturerFont]" Order="600" TextLocId="Control.Text.SharePointLogDlg#Title"/>
+    <ROW Dialog_="SharePointLogDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="700" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="SharePointLogDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="800" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="SharePointLogDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="900"/>
+	<ROW Dialog_="SharePointLogDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="SharePointLogDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="1100" Options="1" ExtType="ImageButton" />
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="SharePointLogDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="SharePointLogDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="SharePointLogDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.SharePointLogDlg"/>
+  </COMPONENT>
+</FRAGMENT>

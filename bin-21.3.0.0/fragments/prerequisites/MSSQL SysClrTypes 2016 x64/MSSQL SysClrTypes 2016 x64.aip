@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.6" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BE25A419F4C2490FD47578347DF93" DisplayName="Microsoft System CLR Types for SQL Server 2016 x64" VersionMin="13.0"
+      SetupFileUrl="https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/SQLSysClrTypes.msi"
+      Location="1" ExactSize="3731456" MD5="66891ee004bd485a1f97012ad0bbcdfb"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xf" TargetName="Microsoft System CLR Types for SQL Server 2016?SQLSysClrTypes_x64.msi"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BE25A419F4C2490FD47578347DF93Version" Prereq="BE25A419F4C2490FD47578347DF93" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server 2016 Redist\SQL Server System CLR Types\CurrentVersion\Version" VerMin="13.0.1601.5"
+      Order="1" Property="PreReqSearch_BE25A419F4C2490FD47578347DF93"/>
+  </COMPONENT>
+</FRAGMENT>

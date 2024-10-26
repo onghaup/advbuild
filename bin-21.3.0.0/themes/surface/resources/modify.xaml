@@ -1,0 +1,21 @@
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Foreground="[AiWinUIBtnViewReadmeForegroundNormal]" Background="[AiWinUIBtnModifyBackgroundNormal]" Width="253" Height="879" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" Margin="61,32,0,0" VerticalAlignment="Top" Padding="0,0,0,0">
+	<Button.ContentTemplate>
+		<DataTemplate>
+			<TextBlock x:Name="Ico" FontFamily="Courier New"  VerticalAlignment="Bottom" FontSize="100" FontWeight="Bold" >
+              <TextBlock.RenderTransform>
+                <CompositeTransform TranslateY="25"/>
+              </TextBlock.RenderTransform>
+              <Run Text="&#x00B1;"/>
+            </TextBlock>
+		</DataTemplate>
+	</Button.ContentTemplate>
+	<Button.Resources>
+		<ResourceDictionary>
+			<SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="[AiWinUIBtnModifyForegroundPointerOver]"/>
+			<SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="[AiWinUIBtnModifyBackgroundPointerOver]"/>
+			<SolidColorBrush x:Key="ButtonForegroundPressed" Color="[AiWinUIBtnModifyForegroundPressed]"/>
+			<SolidColorBrush x:Key="ButtonBackgroundPressed" Color="[AiWinUIBtnModifyBackgroundPressed]"/>
+			<SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="[AiWinUIBtnModifyBorderPointerOver]"/>
+		</ResourceDictionary>
+	</Button.Resources>
+</Button>

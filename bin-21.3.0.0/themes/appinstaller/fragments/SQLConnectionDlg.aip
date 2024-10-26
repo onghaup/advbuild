@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="9.3" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="SQLConnectionDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="490" Height="290" Attributes="1" Text="[Background]" Order="100"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="OdbcResourceEdit" Type="Edit" X="76" Y="111" Width="160" Height="18" Attributes="3" Property="ODBC_RES_PROP" Order="200" TextLocId="Control.Text.SQLConnectionDlg#OdbcResourceEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ServerEdit" Type="Edit" X="314" Y="111" Width="160" Height="18" Attributes="3" Property="SERVER_PROP" Order="300" TextLocId="Control.Text.SQLConnectionDlg#ServerEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PortEdit" Type="Edit" X="76" Y="136" Width="160" Height="18" Attributes="19" Property="PORT_PROP" Order="400" TextLocId="Control.Text.SQLConnectionDlg#PortEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="DatabaseEdit" Type="Edit" X="314" Y="136" Width="160" Height="18" Attributes="3" Property="DATABASE_PROP" Order="500" TextLocId="Control.Text.SQLConnectionDlg#DatabaseEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="UsernameEdit" Type="Edit" X="76" Y="161" Width="160" Height="18" Attributes="3" Property="USERNAME_PROP" Order="600" TextLocId="Control.Text.SQLConnectionDlg#UsernameEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PasswordEdit" Type="Edit" X="314" Y="161" Width="160" Height="18" Attributes="2097155" Property="PASSWORD_PROP" Order="700" TextLocId="Control.Text.SQLConnectionDlg#PasswordEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Back" Type="ImageButton" X="280" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="800" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Next" Type="ImageButton" X="379" Y="210" Width="95" Height="28" Attributes="3" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="900" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]" ExtDataLocId="-"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[ButtonImage]" TextStyle="[ImageBtnFont]" Order="1000" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" TextStyle="[ProductNameTitleFont]" Order="1100" TextLocId="AppInstaller.Control.Text.ProductName"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1200" TextLocId="AppInstaller.Control.Text.Manufacturer"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="1300"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="OdbcResourceLabel" Type="Text" X="16" Y="111" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1400" TextLocId="Control.Text.SQLConnectionDlg#OdbcResourceLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ServerLabel" Type="Text" X="254" Y="111" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1500" TextLocId="Control.Text.SQLConnectionDlg#ServerLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PortLabel" Type="Text" X="16" Y="136" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1600" TextLocId="Control.Text.SQLConnectionDlg#PortLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="DatabaseLabel" Type="Text" X="254" Y="136" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1700" TextLocId="Control.Text.SQLConnectionDlg#DatabaseLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="UsernameLabel" Type="Text" X="16" Y="161" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1800" TextLocId="Control.Text.SQLConnectionDlg#UsernameLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PasswordLabel" Type="Text" X="254" Y="161" Width="60" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="1900" TextLocId="Control.Text.SQLConnectionDlg#PasswordLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" TextStyle="[ManufacturerFont]" Order="2000" TextLocId="AppInstaller.Control.Text.ProductVersion"/>
+	<ROW Dialog_="SQLConnectionDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" ExtData="[InfoIconMsi]" Order="2100" Options="1" ExtType="ImageButton"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="SQLConnectionDlg" Control_="Cancel" Event="EndDialog" Argument="Exit" Condition="1" Ordering="100"/>
+	<ROW Dialog_="SQLConnectionDlg" Control_="AboutBtn" Event="SpawnDialog" Argument="AboutDlg" Condition="1" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="SQLConnectionDlg" HCentering="50" VCentering="50" Width="490" Height="290" Attributes="7" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.SQLConnectionDlg"/>
+  </COMPONENT>
+</FRAGMENT>

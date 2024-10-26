@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="LanguageDlg" Sequence="100" Condition="AI_BOOTSTRAPPER AND (NOT AI_SKIPBOOTSTRAPPERLANG) AND (NOT Installed)" SeqType="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BOOTSTRAPPERLANG" Type="4" ValueLocId="Property.AI_BOOTSTRAPPERLANG"/>
+  </COMPONENT>    
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">  
+  <ROW Dialog_="LanguageDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="400" Height="270" Attributes="1048577" Text="[DialogBitmap]" Order="100"/>
+    <ROW Dialog_="LanguageDlg" Control="Next" Type="PushButton" X="330" Y="245" Width="55" Height="17" Attributes="3" Text="[ButtonText_Next]" Order="200" TextLocId="-"/>
+    <ROW Dialog_="LanguageDlg" Control="Cancel" Type="PushButton" X="1" Y="1" Width="1" Height="1" Attributes="3" Text="[ButtonText_Cancel]" Order="300" TextLocId="-"/>
+    <ROW Dialog_="LanguageDlg" Control="Back" Type="PushButton" X="15" Y="245" Width="56" Height="17" Attributes="0" Text="[ButtonText_Back]" Order="400" TextLocId="-"/>
+    <ROW Dialog_="LanguageDlg" Control="Title" Type="Text" X="22" Y="9" Width="359" Height="60" Attributes="196611" TextStyle="VerdanaBold13" Order="500" TextLocId="Control.Text.LanguageDlg#Title"/>
+    <ROW Dialog_="LanguageDlg" Control="LangComboBox" Type="ComboBox" X="22" Y="75" Width="124" Height="16" Attributes="196611" Property="AI_BOOTSTRAPPERLANG" Order="600"/>
+    <ROW Dialog_="LanguageDlg" Control="LangText" Type="Text" X="22" Y="59" Width="220" Height="11" Attributes="65539" Property="AI_LANGTEXT_PROP" Order="700" TextLocId="Control.Text.LanguageDlg#LangText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="LanguageDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="LanguageDlg" HCentering="50" VCentering="50" Width="400" Height="270" Attributes="3" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.LanguageDlg"/>
+  </COMPONENT>
+</FRAGMENT>

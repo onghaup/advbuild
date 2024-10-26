@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="B4E7E89B44BCBA7D8AF9A6659B363" DisplayName="Oracle Java SE Development Kit 11.0.10 x64" VersionMin="11.0"
+      SetupFileUrl="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
+      Location="2" ExactSize="0"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64"
+      Operator="0" Options="xy"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="B4E7E89B44BCBA7D8AF9A6659B363CurrentVersion" Prereq="B4E7E89B44BCBA7D8AF9A6659B363" SearchType="2"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK\CurrentVersion" VerMin="11.0.10"
+      Order="1" Property="PreReqSearch_B4E7E89B44BCBA7D8AF9A6659B363"/>
+    <ROW SearchKey="B4E7E89B44BCBA7D8AF9A6659B363JDK" Prereq="B4E7E89B44BCBA7D8AF9A6659B363" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK" VerMin="11.0.10"
+      Order="2" Property="PreReqSearch_1_B4E7E89B44BCBA7D8AF9A6659B363"/>
+  </COMPONENT>
+</FRAGMENT>

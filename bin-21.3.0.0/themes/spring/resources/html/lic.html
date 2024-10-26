@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Dialog</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="varstyle.css" media="screen" />
+
+  <script type="text/javascript" src="jquery-1.3.2.js"></script>
+
+  <script type="text/javascript" src="common.js"></script>
+
+  <script type="text/javascript">
+    //hook the window load event ("event" argument will be automatically populated by standard browsers)
+    //background: url(background.jpg) no-repeat;
+    $(document).ready(function () {
+
+      //AddCss();
+
+      /* START XXX */
+
+      InitPage();
+
+      document.getElementById('cb1').style.transform = 'scale(' + external.GetFontHeight() / 16 + ')';
+
+      UpdateBackGroundInd("DialogBitmap", 'main');
+      UpdateBackGroundInd("LicenseAgreeLogoIcon", 'logo');
+
+      ResolveTag("p");
+      ResolveTag("h1"); ResolveTag("span");
+      ResolveTag("a");
+
+      ResolveTag("label");
+
+      if (external.MsiGetProperty('IAgree') == 'Yes') {
+
+        document.getElementById('cb1').checked = true;
+        document.getElementById('rightBtnDiv').className = 'buttonwrapper buttonwrapper-right';
+      }
+
+      
+      ShowFooter();
+
+      /* END XXX */
+
+    });
+
+    function MsiPropertyChanged(aProperty) {
+
+      if (aProperty != "IAgree")
+        return;
+
+      if (external.MsiGetProperty('IAgree') == 'Yes') {
+        document.getElementById('cb1').checked = true;
+        document.getElementById('rightBtnDiv').className = 'buttonwrapper buttonwrapper-right';
+      }
+      else {
+        document.getElementById('cb1').checked = false;
+        document.getElementById('rightBtnDiv').className = 'buttonwrapper buttonwrapper-right buttonwrapper-disabled';
+      }
+    }
+
+    function DoCheckClick(elem) {
+      text = 'No';
+      if (elem.checked) {
+        text = 'Yes';
+        document.getElementById('rightBtnDiv').className = 'buttonwrapper buttonwrapper-right';
+      }
+      else {
+        document.getElementById('rightBtnDiv').className = 'buttonwrapper buttonwrapper-right buttonwrapper-disabled';
+      }
+
+      external.MsiSetProperty('IAgree', text);
+      external.MsiPublishEvents('EulaAgreeCheckBox');
+    }
+
+    function DoNext(elem) {
+      if (!elem.parentElement.parentElement.classList.contains('buttonwrapper-disabled')) {
+        external.MsiPublishEvents('Next');
+      }
+    }
+
+
+  </script>
+
+  
+</head>
+<body>
+  <!-- Background will be changed at load with the one specified in Binary... this default value is used for openning the HTML in other browser aka debugging -->
+  <div id="main" style="background-image: url(../background.jpg);">
+    <div id="header">
+      <div id="logo" style="background-image: url(../OptionsLogo.png);">
+      </div>
+      <h1 formatted="twice" keepamp="true" style="visibility: hidden">
+        [LicDlgTitle]
+      </h1>
+      <div class="clear">
+      </div>
+
+      <script type="text/javascript">
+        AdvinstTextMark();
+      </script>
+
+    </div>
+    <div id="content">
+      <p class="description" id="desc" formatted="twice" keepamp="true" style="visibility: hidden">
+        [LicDlgSubTitle]
+      </p>
+      <a id="print" href="#" onclick="external.MsiPublishEvents('PrintButton');">&#x1F5B6;</a>
+      <!-- Development only to be hiden of commented for release XXX -->
+      <div id="placeholder" style="visibility: hidden; border: 1px solid #9c9c9c; height: 226px;
+        margin: 104px 0 0 0;">
+      </div>
+      <!-- XXX comment guard end -->
+      <div class="aditional-info">
+        <input type="checkbox" name="cb1" id="cb1" onclick="DoCheckClick(this);">
+        <label formatted="twice" for="cb1">
+          [LicDlgCheckBoxText]
+        </label>
+      </div>
+    </div>
+    <div id="footer" style="visibility: hidden">
+      <div class="button-group">
+        <div class="buttonwrapper">
+          <span formatted="twice">
+            <a onclick="external.MsiPublishEvents('Back')"
+               href="#">
+              &#x2b9c; &#x20; [ButtonText_Back]
+            </a>
+          </span>
+        </div>
+        <div id="rightBtnDiv" class="buttonwrapper buttonwrapper-right buttonwrapper-disabled">
+          <span formatted="twice">
+            <a id="rightBtnA" mydisabled="true" onclick="DoNext(this)"
+               href="#">
+              [ButtonText_Next] &#x20; &#x2b9e;
+            </a>
+          </span>
+        </div>
+        <!--
+        <div class="buttonwrapper cancel">
+            <a id="cancelBtnA" href="#" onclick="external.MsiPublishEvents('Cancel');">
+                <b>
+                    <img src="cancel.png" width="16" height="16"/>
+                </b>
+                <span id="cancelBtnSpan" formatted="noarrow">[ButtonText_Cancel]</span>
+            </a>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

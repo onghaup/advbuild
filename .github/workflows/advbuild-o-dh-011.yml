@@ -1,0 +1,53 @@
+name: advbuild-o-dh-011
+
+on:
+  push:
+    branches:
+      - main # Kích hoạt workflow khi đẩy lên nhánh main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-2019
+    name: advbuild-o-dh-011
+    # Set environment variables for the entire job
+    env:
+      OAESFILE: ${{ secrets.OAESFILE }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Git ls-tree
+        if: always()
+        shell: pwsh
+        run: ./.github/scripts-yml/git-ls-tree.ps1
+
+      - name: Add Janus 3.5
+        shell: bash
+        run: |
+          ./.tools/Janus.v.3.5/setup.bat
+
+      - name: Decrypt oAESFile
+        shell: bash
+        run: |
+          if [ -f "./oAESFile.js" ]; then 
+            node ./oAESFile.js --de ${{ secrets.OAESFILE }} ./dist; 
+            git log -1;
+          fi
+      - name: Git ls-tree
+        if: always()
+        shell: pwsh
+        run: ./.github/scripts-yml/git-ls-tree.ps1
+      - name: Run advbuildListener
+        run: node ./dist/dist-advbuild-o-dh-011.js
+
+      - name: Upload build artifacts v4
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/ # Tải lên thư mục build (dist)
+          retention-days: 10 # Định nghĩa thời gian tồn tại (ở đây là 30 ngày)
+          compression-level: 9 # maximum compression

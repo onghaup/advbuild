@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.8" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D09784F374E3A9F5FB0AFDC657291" DisplayName="Microsoft Edge WebView2 Runtime (web installer)" VersionMin="114.0"
+      SetupFileUrl="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/7b6f380d-d407-4145-b81d-af58f4c19765/MicrosoftEdgeWebview2Setup.exe"
+      Location="1" ExactSize="0"
+      WinNTVersions="Windows 8 x86"
+      WinNT64Versions="Windows 8 x64"
+      NoUiComLine="/silent /install"
+      Operator="1" Options="yx" TargetName="WebView2"/>
+    <ATTRIBUTE name="GroupName" value="Web Client"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D09784F374E3A9F5FB0AFDC657291p_1" Prereq="D09784F374E3A9F5FB0AFDC657291" SearchType="7"
+      SearchString="HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}\pv"
+      Order="2" Property="PreReqSearch_D09784F374E3A9F5FB0AFDC657291"/>
+    <ROW SearchKey="D09784F374E3A9F5FB0AFDC657291pv" Prereq="D09784F374E3A9F5FB0AFDC657291" SearchType="7"
+      SearchString="HKCU\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}\pv"
+      Order="1" Property="PreReqSearch_AF4EF7137AE24E488A4E12_D09784F374E3A9F5FB0AFDC657291"/>
+  </COMPONENT>
+</FRAGMENT>

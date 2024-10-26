@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.6" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D17D1EE3B5447079AEF0A1CF58498F1" DisplayName="SQL Server Express LocalDB 2017" VersionMin="14.0"
+      SetupFileUrl="https://download.microsoft.com/download/E/F/2/EF23C21D-7860-4F05-88CE-39AA114B014B/SqlLocalDB.msi"
+      Location="1" ExactSize="48230400" MD5="d180ae500607f6eae8942eaa285d8a06"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64"
+      BasicUiComLine="/qb IACCEPTSQLLOCALDBLICENSETERMS=YES"
+      NoUiComLine="/qn IACCEPTSQLLOCALDBLICENSETERMS=YES"
+      Operator="1" Options="xf" TargetName="SQL Server Express LocalDB 2017"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D17D1EE3B5447079AEF0A1CF58498F1Version" Prereq="D17D1EE3B5447079AEF0A1CF58498F1" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server 2017 Redist\SqlLocalDB\CurrentVersion\Version" VerMin="14.0.1000.169"
+      Order="1" Property="PreReqSearch_D17D1EE3B5447079AEF0A1CF58498F1"/>
+  </COMPONENT>
+</FRAGMENT>

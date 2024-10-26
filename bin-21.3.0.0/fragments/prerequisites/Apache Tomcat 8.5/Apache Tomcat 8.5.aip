@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.2" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="DEF4A06AD54FF1ADA49CD913E03F82" DisplayName="Apache Tomcat 8.5.84" VersionMin="8.5"
+      SetupFileUrl="https://downloads.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.exe"
+      Location="1" ExactSize="11439648" MD5="1b8d08f339da9984c9232ffa11d0d9af"
+      WinNTVersions=""
+      WinNT64Versions=""
+      NoUiComLine="/S"
+      Operator="1" Options="xf" TargetName="Apache Tomcat"/>
+    <ATTRIBUTE name="GroupName" value="Web Server"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="DEF4A06AD54FF1ADA49CD913E03F82Version" Prereq="DEF4A06AD54FF1ADA49CD913E03F82" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Apache Software Foundation\Tomcat\8.5\Tomcat8\Version" VerMin="8.5.84"
+      Order="1" Property="PreReqSearch_DEF4A06AD54FF1ADA49CD913E03F82"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="IAgree" Value="No" Type="4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="520" Height="320" Attributes="1" Text="[BannerBitmap]" Order="100"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Next" Type="PushButton" X="449" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Next]" TextStyle="DlgFont10" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Cancel" Type="PushButton" X="1" Y="1" Width="1" Height="1" Attributes="3" Text="[ButtonText_Cancel]" TextStyle="DlgFont10" Order="300" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="71" Y="68" Width="378" Height="191" Attributes="7" TextStyle="DlgFont10" Order="400" Property="EulaRead" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Back" Type="PushButton" X="15" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Back]" TextStyle="DlgFont10" Order="500" TextLocId="-" Options="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Title" Type="Text" X="71" Y="26" Width="378" Height="30" Attributes="196611" TextStyle="TitleFontSegoe" Order="600" TextLocId="Control.Text.LicenseAgreementDlg#Title"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlConditionComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Action="Disable" Condition="NOT EulaRead"/>
+  	<ROW Dialog_="LicenseAgreementDlg" Control_="Next" Action="Enable" Condition="EulaRead OR NOT AIEXTERNALUI"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="LicenseAgreementDlg" HCentering="50" VCentering="50" Width="520" Height="320" Attributes="3" Title="[ProductName] [Setup]" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.LicenseAgreementDlg"/>
+  </COMPONENT>
+</FRAGMENT>

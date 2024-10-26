@@ -1,0 +1,41 @@
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Margin="210,0,0,0" Width="72" Height="36" CornerRadius="4" Padding="0,0,0,0" Foreground="#EBF5FA" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+	<Button.Background>
+		<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" Opacity="0.6">
+			<GradientStop Color="[AiWinUIBtnNormalBkgColorStart]" Offset="0.0"/>
+			<GradientStop Color="[AiWinUIBtnNormalBkgColorMid]" Offset="0.1"/>
+			<GradientStop Color="[AiWinUIBtnNormalBkgColorEnd]" Offset="1.0"/>
+		</LinearGradientBrush>
+	</Button.Background>
+	<Button.BorderBrush>
+		<SolidColorBrush Color="[AiWinUIBtnNormalBorder]" Opacity="0.5"/>
+	</Button.BorderBrush>
+	<Button.Resources>
+		<ResourceDictionary>
+			<LinearGradientBrush x:Key="ButtonBackgroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="[AiWinUIBtnHoverBkgColorStart]" Offset="0.0"/>
+				<GradientStop Color="[AiWinUIBtnHoverBkgColorMid]" Offset="0.1"/>
+				<GradientStop Color="[AiWinUIBtnHoverBkgColorEnd]" Offset="1.0"/>
+			</LinearGradientBrush>
+			<LinearGradientBrush x:Key="ButtonBackgroundPressed" EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="[AiWinUIBtnPressedBkgColorStart]" Offset="0.0"/>
+				<GradientStop Color="[AiWinUIBtnPressedBkgColorMid]" Offset="0.1"/>
+				<GradientStop Color="[AiWinUIBtnPressedBkgColorEnd]" Offset="1.0"/>
+			</LinearGradientBrush>
+			<SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="[AiWinUIBtnHoverBorder]" Opacity="1"/>
+			<SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#EBF5FA"/>
+			<SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="[AiWinUIBtnPressedBorder]" Opacity="1"/>
+			<SolidColorBrush x:Key="ButtonForegroundPressed" Color="#EBF5FA"/>
+		</ResourceDictionary>
+	</Button.Resources>
+	<Button.Content>
+		<StackPanel x:Name="StackPanel" Orientation="Horizontal" Margin="0,0,0,0">
+			<PathIcon Width="13" Height="13" Data="m12.311 6.779-5.76-5.76 0 3.36-5.76 0 0 4.8 5.76 0 0 3.36" RenderTransformOrigin="0.5,0.5">
+				<PathIcon.RenderTransform>
+					<CompositeTransform Rotation="180"/>
+				</PathIcon.RenderTransform>
+			</PathIcon>
+			<TextBlock Width="3" Opacity="0"/>
+			<!-- button text items will be appended here FontFamily="Trebuchet MS" FontSize="13" FontWeight="Bold" -->
+		</StackPanel>
+	</Button.Content>
+</Button>

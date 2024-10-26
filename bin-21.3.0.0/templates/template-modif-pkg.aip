@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" RootPath=".">
+    <COMPONENT cid="caphyon.advinst.msicomp.AppXCfgComponent">
+        <ROW ID="Configuration" Order="1" ManifestFile="AppxManifest.xml" TargetOs="4"/>
+    </COMPONENT>
+    <COMPONENT cid="caphyon.advinst.msicomp.GenericDirectoryComponent">
+        <ROW Id="1" Name="ROOT" Flags="1"/>
+        <ROW Id="2" Name="Assets" Parent="1" Flags="0"/>
+    </COMPONENT>
+    <COMPONENT cid="caphyon.advinst.msicomp.GenericFileComponent">
+        <ROW Id="1" Name="StoreLogo.scale-100.png" Path="&lt;AI_RES&gt;appx\StoreLogo.png" ParentDir="2"/>
+    </COMPONENT>
+    <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlAttributeComponent">
+        <ROW XmlAttribute="Name" XmlElement="Identity" Name="Name" Flags="0" Order="0" Value="YourCompany.YourApplication.ModificationPackage"/>
+        <ROW XmlAttribute="Publisher" XmlElement="Identity" Name="Publisher" Flags="0" Order="0" Value="CN=Default ID"/>
+        <ROW XmlAttribute="Version" XmlElement="Identity" Name="Version" Flags="0" Order="0" Value="1.0.0.0"/>
+        <ROW XmlAttribute="Language" XmlElement="Resource" Name="Language" Flags="0" Order="0" Value="en-us"/>
+        <ROW XmlAttribute="Name_1" XmlElement="TargetDeviceFamily" Name="Name" Flags="0" Order="0" Value="Windows.Desktop"/>
+        <ROW XmlAttribute="Name_2" XmlElement="MainPackageDependency" Name="Name" Flags="0" Order="0" Value="YourCompany.YourApplication"/>
+        <ROW XmlAttribute="MinVersion" XmlElement="TargetDeviceFamily" Name="MinVersion" Flags="0" Order="0" Value="10.0.17763.0"/>
+        <ROW XmlAttribute="MaxVersionTested" XmlElement="TargetDeviceFamily" Name="MaxVersionTested" Flags="0" Order="0" Value="10.0.22621.0"/>
+    </COMPONENT>
+    <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlElementComponent">
+        <ROW XmlElement="Package" Name="Package" Order="0" Flags="30" Type="6"/>
+        <ROW XmlElement="Identity" ParentElement="Package" Name="Identity" Order="0" Flags="0" Type="1"/>
+        <ROW XmlElement="Properties" ParentElement="Package" Name="Properties" Order="1" Flags="0" Type="1"/>
+        <ROW XmlElement="Resources" ParentElement="Package" Name="Resources" Order="2" Flags="0" Type="1"/>
+        <ROW XmlElement="Resource" ParentElement="Resources" Name="Resource" Order="0" Flags="0" Type="1"/>
+        <ROW XmlElement="DisplayName" ParentElement="Properties" Name="DisplayName" Order="0" Flags="0" Text="Your Application" Type="1"/>
+        <ROW XmlElement="PublisherDisplayName" ParentElement="Properties" Name="PublisherDisplayName" Order="1" Flags="0" Text="Your Company" Type="1"/>
+        <ROW XmlElement="Description" ParentElement="Properties" Name="Description" Order="2" Flags="0" Text="Description" Type="1"/>
+        <ROW XmlElement="Logo" ParentElement="Properties" Name="Logo" Order="3" Flags="0" FileId="1" Type="0"/>
+        <ROW XmlElement="ModificationPackage" ParentElement="Properties" Name="ModificationPackage" Order="4" Flags="0" Text="true" Type="1"/>
+        <ROW XmlElement="Dependencies" ParentElement="Package" Name="Dependencies" Order="4" Flags="0" Type="0"/>
+        <ROW XmlElement="TargetDeviceFamily" ParentElement="Dependencies" Name="TargetDeviceFamily" Order="0" Flags="0" Type="0"/>
+        <ROW XmlElement="MainPackageDependency" ParentElement="Dependencies" Name="MainPackageDependency" Order="1" Flags="0" Type="0"/>
+    </COMPONENT>
+    <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlFileComponent">
+        <ROW XmlFile="AppxManifest.xml" FileName="AppxManifest.xml" RootElement="Package" Flags="89" Version="1.0" Encoding="utf-8" IndentUnits="2"/>
+    </COMPONENT>
+</DOCUMENT>

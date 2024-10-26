@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://schemas.microsoft.com/appx/publisherbridging/2021"
+           targetNamespace="http://schemas.microsoft.com/appx/publisherbridging/2021"
+           xmlns:c="http://schemas.microsoft.com/appx/publisherbridging/2021"
+           xmlns:t="http://schemas.microsoft.com/appx/manifest/types"
+           attributeFormDefault="unqualified" elementFormDefault="qualified" >
+
+    <xs:element name="Publisher">
+        <xs:complexType>
+            <xs:attribute name="Old" type="t:ST_Publisher_2010_v2" use="required"/>
+            <xs:attribute name="New" type="t:ST_Publisher_2010_v2" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

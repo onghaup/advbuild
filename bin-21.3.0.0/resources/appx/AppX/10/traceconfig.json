@@ -1,0 +1,209 @@
+{
+  "$id": "http://advancedinstaller.com/traceconfig",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "smart": {
+      "$id": "/properties/smart",
+      "title": "The autoApply Schema ",
+      "description": "Enable preloading of all availlable redirects and use when needed",
+      "default": true,
+      "examples": [
+        false,
+        true
+      ]
+    },
+    "waitForDebugger": {
+      "$id": "/properties/waitForDebugger",
+      "title": "The Waitfordebugger Schema ",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false,
+        true
+      ]
+    },
+    "traceFunctionEntry": {
+      "$id": "/properties/traceFunctionEntry",
+      "title": "The Tracefunctionentry Schema ",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false,
+        true
+      ]
+    },
+    "traceCallingModule": {
+      "$id": "/properties/traceCallingModule",
+      "title": "The Tracecallingmodule Schema ",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false,
+        true
+      ]
+    },
+    "traceMethod": {
+      "$id": "/properties/traceMethod",
+      "title": "The TraceMethod Schema ",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "fprintf",
+        "printf",
+        "default"
+      ]
+    },
+    "ignoreDllLoad": {
+      "$id": "/properties/ignoreDllLoad",
+      "type": "Boolean",
+      "title": "The Ignoredllload Schema ",
+      "description": "An explanation about the purpose of this instance.",
+      "default": true,
+      "examples": [
+        false,
+        true
+      ]
+    },
+    "traceLevels": {
+      "$id": "/properties/traceLevels",
+      "properties": {
+        "default": {
+          "$id": "/properties/traceLevels/properties/default",
+          "title": "The Default Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "filesystem": {
+          "$id": "/properties/traceLevels/properties/filesystem",
+          "title": "The Filesystem Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "registry": {
+          "$id": "/properties/traceLevels/properties/registry",
+          "title": "The Registry Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "processAndThread": {
+          "$id": "/properties/traceLevels/properties/processAndThread",
+          "title": "The Processandthread Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "dynamicLinkLibrary": {
+          "$id": "/properties/traceLevels/properties/dynamicLinkLibrary",
+          "title": "The Dynamiclinklibrary Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        }
+      }
+    },
+    "breakOn": {
+      "$id": "/properties/breakOn",
+      "properties": {
+        "default": {
+          "$id": "/properties/breakOn/properties/default",
+          "title": "The Default Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "filesystem": {
+          "$id": "/properties/breakOn/properties/filesystem",
+          "title": "The Filesystem Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "registry": {
+          "$id": "/properties/breakOn/properties/registry",
+          "title": "The Registry Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "processAndThread": {
+          "$id": "/properties/breakOn/properties/processAndThread",
+          "title": "The Processandthread Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        },
+        "dynamicLinkLibrary": {
+          "$id": "/properties/breakOn/properties/dynamicLinkLibrary",
+          "title": "The Dynamiclinklibrary Schema ",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "allFailures",
+            "ignoreSuccess",
+            "always",
+            "unexpectedFailures",
+            "ignore"
+          ]
+        }
+      }
+    }
+  }
+}

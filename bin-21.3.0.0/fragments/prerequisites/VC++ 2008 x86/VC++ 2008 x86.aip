@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C49_E141_464F_BA06_579198CB3688" DisplayName="Visual C++ 2008 x86 (Package ATL Security Update)" VersionMin="9.0"
+      SetupFileUrl="http://download.microsoft.com/download/A/5/3/A53B40CA-F75C-4678-852A-3C15EA82F186/vcredist_x86.exe"
+      Location="1" ExactSize="1846728" MD5="e9a0566682bc8811b096a877459bcc1c"
+      NoUiComLine="/q"
+      Operator="1" Options="f" TargetName="Visual C++ 2008"/>
+    <ATTRIBUTE name="GroupName" value="Visual Studio"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C49_E141_464F_BA06_579198CB3688Install" Prereq="C49_E141_464F_BA06_579198CB3688" SearchType="9"
+      SearchString="HKLM\SOFTWARE\Microsoft\DevDiv\VC\Servicing\9.0\RED\1033\Install" RefContent="M1"
+      Order="1" Property="PreReqSearch_C49_E141_464F_BA06_579198CB3688"/>
+  </COMPONENT>
+</FRAGMENT>

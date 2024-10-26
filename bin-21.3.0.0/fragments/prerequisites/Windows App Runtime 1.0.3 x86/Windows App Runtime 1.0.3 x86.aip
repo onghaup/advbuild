@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.4" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="B8120C2B44A787E3A16E21BA429F" DisplayName="Windows App Runtime 1.0.3 x86" 
+      SetupFileUrl="https://aka.ms/windowsappsdk/1.0/1.0.3/windowsappruntimeinstall-1.0.3-x86.exe" 
+      Location="1" ExactSize="0" 
+      WinNTVersions="Windows 7 x86, Windows 8 x86, Windows 8.1 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1607 x86, Windows 10 version 1703 x86, Windows 10 version 1709 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86" 
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows Server x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64" 
+      Operator="1" ComLine="-q" Options="y" TargetName="Windows App Runtime 1.0.3 x86"/>
+    <ATTRIBUTE name="GroupName" value="Visual Studio"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="B8120C2B44A787E3A16E21BA429FMicrosoft.WindowsAppRuntime.1.0" Prereq="B8120C2B44A787E3A16E21BA429F" SearchType="13" 
+      SearchString="Microsoft.WindowsAppRuntime.1.0" 
+      Order="2" Property="PreReqSearch_1_B8120C2B44A787E3A16E21BA429F"/>
+  </COMPONENT>
+</FRAGMENT>

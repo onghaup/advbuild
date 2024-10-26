@@ -1,0 +1,291 @@
+[EmptyProject]
+  ItemText="Installer Project"
+  Description="Start with empty project and build installers customized to your needs."
+  ExtraDescription=""
+
+[Simp]
+  ItemText="Simple Installer"
+  Description="Create basic MSI installers for simple applications."
+  ExtraDescription="You can upgrade later, from the Home > Options menu"
+
+[Pro]
+  ItemText="Professional Installer"
+  Description="Create powerful packages, with auto-updates, IIS deployment and multiple outputs."
+  ExtraDescription="You can upgrade later, from the Home > Options menu"
+
+[Ent]
+  ItemText="Enterprise Installer"
+  Description="Design fully configurable packages, customize your dialogs, execute SQL queries."
+  ExtraDescription="You can upgrade later, from the Home > Options menu"
+
+[Arh]
+  ItemText="Architect Installer"
+  Description="Build any package type, from standard MSIs to the newest MSIX packages."
+  ExtraDescription=""
+
+[NetApp]
+  ItemText=".NET Application"
+  Description="Create installers for .NET Framework applications."
+  ExtraDescription=""
+
+[VsApp]
+  ItemText="Visual Studio Application"
+  Description="Create installation packages by importing Visual Studio project files."
+  ExtraDescription=""
+
+[Vb6App]
+  ItemText="Visual Basic 6.0 Application"
+  Description="Create installation packages by importing Visual Basic 6.0 project files."
+  ExtraDescription=""
+
+[RealApp]
+  ItemText="Real Studio Application"
+  Description="Create installation packages by importing Real Studio project files."
+  ExtraDescription=""
+
+[MsixPackage]
+  ItemText="MSIX Package"
+  Description="Create MSIX packages."
+  ExtraDescription=""
+
+[MixedApp]
+  ItemText="Mixed 32/64-bit Package"
+  Description="Create mixed 32/64-bit installation packages."
+  ExtraDescription=""
+
+[AspApp]
+  ItemText="ASP.NET Application"
+  Description="Create installers for ASP.NET applications."
+  ExtraDescription=""
+
+[CSApp]
+  ItemText="Client/Server Application"
+  Description="Create installers for client/server applications."
+  ExtraDescription=""
+
+[XnaGame]
+  ItemText="XNA Game"
+  Description="Create installers for XNA games."
+  ExtraDescription=""
+
+[SPSol]
+  ItemText="SharePoint Solution"
+  Description="Create installers for SharePoint solutions."
+  ExtraDescription=""
+
+[AppVPackage]
+  ItemText="New App-V Package"
+  Description="Create an App-V package by sequencing an existing installation."
+  ExtraDescription="You need administrator privileges to continue."
+
+[EditAppVPackage]
+  ItemText="Edit App-V Package"
+  Description="Create a project by importing existing App-V package."
+  ExtraDescription=""
+
+[RADStudio]
+  ItemText="RAD Studio Application"
+  Description="Create installers for applications developed with RAD Studio."
+  ExtraDescription=""
+
+[InstallerProject]
+  ItemText="Java Application"
+  Description="Create Windows and Mac OS X installers for Java products."
+  ExtraDescription=""
+
+[Tomcat]
+  ItemText="Tomcat Web Application"
+  Description="Create installers for Tomcat web applications."
+  ExtraDescription=""
+
+[Eclipse]
+  ItemText="Eclipse Workspace"
+  Description="Create installation packages by importing Eclipse workspaces."
+  ExtraDescription=""
+
+[InteliJ]
+  ItemText="IntelliJ IDEA Workspace"
+  Description="Create installation packages by importing IntelliJ IDEA workspaces."
+  ExtraDescription=""
+
+[Patch]
+  ItemText="Patch"
+  Description="Create EXE/MSP patches for your installed products."
+  ExtraDescription=""
+
+[Updates]
+  ItemText="Updates Configuration"
+  Description="Create Update configuration files for Auto Updater."
+  ExtraDescription=""
+
+[OfficeAddIn]
+  ItemText="Office Add-In"
+  Description="Create installers for Office Add-ins."
+  ExtraDescription=""
+
+[VsAddIn]
+  ItemText="Visual Studio Add-In"
+  Description="Create installers for Visual Studio Add-Ins."
+  ExtraDescription=""
+
+[VsExt]
+  ItemText="Visual Studio Extension"
+  Description="Create installers for Visual Studio Extensions."
+  ExtraDescription=""
+
+[AdobePlugIn]
+  ItemText="Adobe Product Plug-In"
+  Description="Create installers for Adobe products plug-ins."
+  ExtraDescription=""
+
+[MSM]
+  ItemText="MSM"
+  Description="Create redistributable MSM merge modules."
+  ExtraDescription=""
+
+[MSMImp]
+  ItemText="MSM Package"
+  Description="Create redistributable MSM merge modules by importing existing MSM files."
+  ExtraDescription=""
+
+[WixMSM]
+  ItemText="WiX MSM Project"
+  Description="Create redistributable MSM merge modules by importing WiX MSM projects."
+  ExtraDescription=""
+
+[VSMSM]
+  ItemText="Visual Studio MSM Project"
+  Description="Create redistributable MSM merge modules by importing Visual Studio MSM projects."
+  ExtraDescription=""
+
+[APPX]
+  ItemText="Windows Store Package"
+  Description="Creates a package for an application distributable through Windows Store."
+  ExtraDescription=""
+
+[Modification Package]
+  ItemText="Modification Package"
+  Description="Creates a Modification Package."
+  ExtraDescription=""
+
+[Optional Package]
+  ItemText="Optional Package"
+  Description="Creates an Optional Package."
+  ExtraDescription=""
+
+[Repack]
+  ItemText="Repackage Installation"
+  Description="Capture and repackage existing installations."
+  ExtraDescription=""
+
+[SessionMonitoring]
+  ItemText="Repackager Session Monitoring"
+  Description="Session Monitoring option enables you to create a package that"
+  ExtraDescription=""
+
+[ImportRpk]
+  ItemText="Import Repackaging Results"
+  Description="Create a project starting from results of a previous repackaging operation."
+  ExtraDescription=""
+
+[DesktopAppConverter]
+  ItemText="Desktop App Converter (MSIX)"
+  Description="Create MSIX packages."
+  ExtraDescription=""
+
+[QuickMsiToMsix]
+  ItemText="Quick MSI to MSIX"
+  Description="Import and convert an MSI to an MSIX without repackaging it."
+  ExtraDescription=""
+
+[DACToMSI]
+  ItemText="MSIX Package"
+  Description="Creates a MSI/UWP package by importing an existing MSIX/APPX package (Project Centennial)."
+  ExtraDescription=""
+
+[MsiImp]
+  ItemText="Import MSI"
+  Description="Create installation packages by importing existing MSI files."
+  ExtraDescription=""
+
+[AppVImp]
+  ItemText="App-V 4.x package"
+  Description="Creates installation packages by importing existing App-V 4.x packages."
+  ExtraDescription=""
+
+[AppV5Imp]
+  ItemText="App-V 5.x package"
+  Description="Creates installation packages by importing existing App-V 5.x packages."
+  ExtraDescription=""
+
+[AppXImp]
+  ItemText="Windows Store App"
+  Description="Creates packages for Windows Store applications by importing existing MSIX/APPX packages."
+  ExtraDescription=""
+
+[Modification Package Import]
+  ItemText="Modification Package"
+  Description="Creates a Modification Package by importing an existing Modification Package."
+  ExtraDescription=""
+
+[Optional Package Import]
+  ItemText="Optional Package"
+  Description="Creates an Optional Package by importing an existing Optional Package."
+  ExtraDescription=""
+
+[ThinAppImp]
+  ItemText="ThinApp Project Folder"
+  Description="Creates installation packages by importing a ThinApp project folder."
+  ExtraDescription=""
+
+[Chainer]
+  ItemText="MSI from EXE(s)"
+  Description="Create an MSI installation package which installs existing EXE packages."
+  ExtraDescription=""
+
+[VDPrj]
+  ItemText="Visual Studio Setup Project"
+  Description="Create installation packages by importing Visual Studio setup projects."
+  ExtraDescription=""
+
+[Wix]
+  ItemText="WiX Project"
+  Description="Create installation packages by importing WiX projects."
+  ExtraDescription=""
+
+[INNO]
+  ItemText="Inno Setup Script"
+  Description="Create installation packages by importing Inno Setup scripts."
+  ExtraDescription=""
+
+[NSIS]
+  ItemText="NSIS Script"
+  Description="Create installation packages by importing NSIS scripts."
+  ExtraDescription=""
+
+[InstShLe]
+  ItemText="InstallShield Project"
+  Description="Create installation packages by importing InstallShield projects."
+  ExtraDescription=""
+
+[WISE]
+  ItemText="WISE Project"
+  Description="Create installation packages by importing WISE projects."
+  ExtraDescription=""
+
+[MST]
+  ItemText="MSI Transform"
+  Description="Perform changes to an MSI package and save them as transform."
+  ExtraDescription=""
+
+[ResMST]
+  ItemText="Response Transform"
+  Description="Record an installation scenario into a transform in order to automate future installations."
+  ExtraDescription=""
+
+[DeltaMST]
+  ItemText="Delta Transform"
+  Description="Generate a transform that will contain the differences between two MSI packages."
+  ExtraDescription=""
+
+

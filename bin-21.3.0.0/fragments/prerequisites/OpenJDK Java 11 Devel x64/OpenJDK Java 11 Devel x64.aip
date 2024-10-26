@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="18.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A8DC51F090F40358A2E3AA613207A26" DisplayName="OpenJDK Java Development Kit 11.0.10 x64" VersionMin="11.0"
+      SetupFileUrl="https://github.com/ojdkbuild/ojdkbuild/releases/download/java-11-openjdk-11.0.10.9-1/java-11-openjdk-11.0.10.9-1.windows.ojdkbuild.x86_64.msi"
+      Location="1" ExactSize="253744657" MD5="771afbcee984b0c30701150b032c10e6"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64"
+      BasicUiComLine="/qb"
+      NoUiComLine="/qn"
+      Operator="0" Options="xf" TargetName="OpenJDK Java Development Kit"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A8DC51F090F40358A2E3AA613207A26CurrentVersion" Prereq="A8DC51F090F40358A2E3AA613207A26" SearchType="2"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK\CurrentVersion" VerMin="11.0.10"
+      Order="1" Property="PreReqSearch_A8DC51F090F40358A2E3AA613207A26"/>
+    <ROW SearchKey="A8DC51F090F40358A2E3AA613207A26JDK" Prereq="A8DC51F090F40358A2E3AA613207A26" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK" VerMin="11.0.10"
+      Order="2" Property="PreReqSearch_1_A8DC51F090F40358A2E3AA613207A26"/>
+  </COMPONENT>
+</FRAGMENT>

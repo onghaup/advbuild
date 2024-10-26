@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.6" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="ADCF91962DDE4ECA9946124ABD740E9E" DisplayName="SQL Server ODBC Driver 13.1 x64" VersionMin="13.1.4414.46"
+      SetupFileUrl="http://download.microsoft.com/download/D/5/E/D5EEF288-A277-45C8-855B-8E2CB7E25B96/x64/msodbcsql.msi"
+      Location="1" ExactSize="4157440" MD5="98b04dbc5ac6b67cd2f174f40e42f58f"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions=""
+      BasicUiComLine="/qb IACCEPTMSODBCSQLLICENSETERMS=YES"
+      NoUiComLine="/qn IACCEPTMSODBCSQLLICENSETERMS=YES"
+      Operator="1" Options="xf" TargetName="SQL Server Express 2016 SP1?msodbcsql_x64.msi"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="ADCF91962DDE4ECA9946124ABD740E9EVersion" Prereq="ADCF91962DDE4ECA9946124ABD740E9E" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft ODBC Driver 13 for SQL Server\CurrentVersion\Version" VerMin="13.1.4414.46"
+      Order="1" Property="PreReqSearch_ADCF91962DDE4ECA9946124ABD740E9E"/>
+  </COMPONENT>
+</FRAGMENT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.0" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C4FE6FD5B7C4D07B3A313E754A9A6A8" DisplayName="Visual C++ Redistributable for Visual Studio 2015-2022 x64" VersionMin="14.30"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/2250605e-e48f-43ed-ba6e-e0cc18bc530d/A9F5D2EAF67BF0DB0178B6552A71C523C707DF0E2CC66C06BFBC08BDC53387E7/VC_redist.x64.exe"
+      Location="1" ExactSize="25267128" MD5="b04c99520edb36613461b3c87c5c8e19"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="xf" TargetName="Visual C++ Redistributable for Visual Studio 2015-2022"/>
+    <ATTRIBUTE name="GroupName" value="Visual Studio"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C4FE6FD5B7C4D07B3A313E754A9A6A8Version" Prereq="C4FE6FD5B7C4D07B3A313E754A9A6A8" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\DevDiv\VC\Servicing\14.0\RuntimeMinimum\Version" VerMin="14.30.30704"
+      Order="1" Property="PreReqSearch_C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+  </COMPONENT>
+</FRAGMENT>

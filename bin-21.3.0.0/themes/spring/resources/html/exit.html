@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Dialog</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="varstyle.css" media="screen" />
+
+  <script type="text/javascript" src="jquery-1.3.2.js"></script>
+
+  <script type="text/javascript" src="common.js"></script>
+
+  <script type="text/javascript">
+    //hook the window load event ("event" argument will be automatically populated by standard browsers)
+    //background: url(background.jpg) no-repeat;
+    $(document).ready(function() {
+
+      /* START XXX */
+
+      InitPage();
+      UpdateBackGroundInd("DialogBitmap", 'main');
+      UpdateBackGroundInd("AppLogoIcon", 'logoBig');
+
+      ResolveTag("p");
+        
+      
+      var a = ['ViewReadme', 'RunApp', 'leftBtnA', 'leftBtnSpan', 'rightBtnA', 'rightBtnSpan', 'cancelBtnA', 'cancelBtnSpan'];
+      //UpdateBackGroundIndVec("BannerBitmap", a);
+      ShowFooter();
+
+
+      element = document.getElementById("ViewReadme");
+      if (element)
+      {
+        ResolveElement(element);
+      }
+      
+      if (external.MsiEvaluateCondition("((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS <> 1) AND (CTRLS <> 3))") == false)
+        element.style.visibility = "visible";
+      else
+        element.style.visibility = "hidden";
+
+      element = document.getElementById("rightBtnSpan");
+      
+      if (external.MsiEvaluateCondition("((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS <> 2) AND (CTRLS <> 3))") == false) {        
+        ResolveElement(element);
+        
+        element.style.visibility = "visible";
+      }
+      else {
+        external.MsiSetProperty('ExitDlgViewRun', external.MsiGetProperty("ExitDlgClose"));
+        
+        ResolveElement(element);
+        
+        element.style.visibility = "visible";
+      }
+
+      /* END XXX */
+    });
+  </script>
+
+  
+</head>
+<body>
+  <!-- Background will be changed at load with the one specified in Binary... this default value is used for openning the HTML in other browser aka debugging -->
+  <div id="main" style="background-image: url(../background.jpg);">
+    <div id="header">
+
+      <script type="text/javascript">
+			AdvinstTextMark();
+      </script>
+
+    </div>
+    <div id="content">
+      <div id="logoBig" style="background: url(../applogo.png) no-repeat;">
+      </div>
+      <p class="description center-inline" id="desc" formatted="twice" keepamp="true" style="visibility: hidden">
+        [ExitDlgSubTitle]</p>
+    </div>
+    <div id="footer" style="visibility: hidden">
+      <div class="button-group">
+        <div style="visibility: hidden" class="buttonwrapper">
+          <span id="leftBtnSpan">
+            <a id="ViewReadme" onclick="external.MsiPublishEvents('ViewReadmeCheckBox')" href="#" formatted="twice" keepamp="true">
+               &#x1F5CE; &#x20; [ExitDlgViewReadme]
+            </a>
+          </span>
+        </div>
+        <div style="visibility: hidden" class="buttonwrapper buttonwrapper-right">
+          <span id="rightBtnSpan" formatted="twice" keepamp="true">
+            <a id="RunApp" onclick="external.MsiPublishEvents('LaunchProdCheckBox')" href="#">
+              [ExitDlgViewRun] &#x20; &#x2b9e;
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

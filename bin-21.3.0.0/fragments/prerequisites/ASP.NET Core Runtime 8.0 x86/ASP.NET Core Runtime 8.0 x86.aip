@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="EA917127DD4A46AA9FA1E2AC7DCF6F" DisplayName="ASP.NET Core Runtime 8.0.0 x86" VersionMin="8.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/66ae7d00-596a-4e36-be73-2ebc0c332329/e2f6e37933e204fef5687e338a95b749/aspnetcore-runtime-8.0.0-win-x86.exe"
+	  Location="1" ExactSize="9646544" MD5="774d3935cbde24ecc3ec3789ff46a80c"
+	  WinNTVersions="Windows Vista x86, Windows Server 2008 x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+	  WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="f" TargetName="ASP.NET Core 8.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="EA917127DD4A46AA9FA1E2AC7DCF6FSystemFolderfile.dll" Prereq="EA917127DD4A46AA9FA1E2AC7DCF6F" SearchType="1"
+	  SearchString="HKLM\SOFTWARE\Microsoft\ASP.NET Core\Shared Framework\v8.0" VerMin="8.0.0"
+	  Order="1" Property="PreReqSearch_EA917127DD4A46AA9FA1E2AC7DCF6F"/>
+  </COMPONENT>
+</FRAGMENT>

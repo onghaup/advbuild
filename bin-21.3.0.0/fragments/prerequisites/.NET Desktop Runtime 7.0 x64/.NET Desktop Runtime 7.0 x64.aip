@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C63A5E8718343189D035A252D1450C5" DisplayName=".NET Desktop Runtime 7.0.14 x64" VersionMin="7.0"
+	  SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/8f5b0079-2bb4-49cd-874e-0f58703eff6e/7010b5f213a2c436a307eb385dbb16ff/windowsdesktop-runtime-7.0.14-win-x64.exe"
+	  Location="1" ExactSize="57776472" MD5="af7784327d802ec1f2aa915d42c38715"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+	  NoUiComLine="/q /norestart"
+	  Operator="1" Options="fx" TargetName=".NET 7.0"/>
+	<ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C63A5E8718343189D035A252D1450C5SystemFolderfile.dll" Prereq="C63A5E8718343189D035A252D1450C5" SearchType="14"
+	  SearchString="[ProgramFiles64Folder]dotnet\shared\Microsoft.WindowsDesktop.App" VerMin="7.0.14"
+	  Order="1" Property="PreReqSearch_C63A5E8718343189D035A252D1450C5"/>
+  </COMPONENT>
+</FRAGMENT>

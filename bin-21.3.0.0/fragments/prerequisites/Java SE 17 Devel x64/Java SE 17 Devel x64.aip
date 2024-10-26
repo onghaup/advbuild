@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="19.0" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="ECA1F3BC3564B5DA490559EA2E1CD74" DisplayName="Oracle Java SE Development Kit 17.0.1 x64" VersionMin="17.0"
+      SetupFileUrl="https://download.oracle.com/java/17/archive/jdk-17.0.1_windows-x64_bin.exe"
+      Location="1" ExactSize="159410512" MD5="abf4141b374ed90e60073a3edf04b6ef"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64"
+      NoUiComLine="/s"
+      Operator="0" Options="xf" TargetName="Oracle Java SE Development Kit"/>
+    <ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="ECA1F3BC3564B5DA490559EA2E1CD74CurrentVersion" Prereq="ECA1F3BC3564B5DA490559EA2E1CD74" SearchType="2"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK\CurrentVersion" VerMin="17.0.1"
+      Order="1" Property="PreReqSearch_ECA1F3BC3564B5DA490559EA2E1CD74"/>
+    <ROW SearchKey="ECA1F3BC3564B5DA490559EA2E1CD74JDK" Prereq="ECA1F3BC3564B5DA490559EA2E1CD74" SearchType="1"
+      SearchString="HKLM\SOFTWARE\JavaSoft\JDK" VerMin="17.0.1"
+      Order="2" Property="PreReqSearch_1_ECA1F3BC3564B5DA490559EA2E1CD74"/>
+  </COMPONENT>
+</FRAGMENT>

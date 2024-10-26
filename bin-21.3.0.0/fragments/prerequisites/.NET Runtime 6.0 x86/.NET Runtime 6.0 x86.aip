@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="21.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="E92D3665B5E468A8661F6547C8C142C" DisplayName=".NET Runtime 6.0.25 x86" VersionMin="6.0"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/af5234d4-8cf2-4f95-895a-cc9c5ce9f904/0bfee492f05b560030716ee066dce3fb/dotnet-runtime-6.0.25-win-x86.exe"
+      Location="1" ExactSize="25646184" MD5="be32fa0e0d92453228475975873b5533"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName=".NET 6.0"/>
+    <ATTRIBUTE name="GroupName" value=".NET"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="E92D3665B5E468A8661F6547C8C142CMicrosoft.NETCore.App" Prereq="E92D3665B5E468A8661F6547C8C142C" SearchType="12"
+      SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\sharedfx\Microsoft.NETCore.App" VerMin="6.0.25"
+      Order="1" Property="PreReqSearch_E92D3665B5E468A8661F6547C8C142C"/>
+  </COMPONENT>
+</FRAGMENT>

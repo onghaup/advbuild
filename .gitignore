@@ -1,0 +1,13 @@
+.vs/*
+*/.vs/*
+obj/*
+*/obj/*
+Debug/*
+*/Debug/*
+Release/*
+*/Release/*
+*.gitignorefile*
+advListener.js
+o-dh-005.aessecret.json
+advExecuteTask.js
+.local-webpack-build-version

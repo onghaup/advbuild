@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contextual-videos SYSTEM "../../xsl/tools/terms.dtd">
+<contextual-videos
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../xsl/tools/videos.xsd">
+
+  <!--AI intro-->
+  <view
+    name="product"
+    title="Product">
+    <video
+      title="Getting started with Advanced Installer"
+      name="advinst-intro"
+      url="lOqc0UdAL4E"
+      time="219"
+    />
+    <video
+      title="Search options in the left pane"
+      name="search-options"
+      url="uzUdsAqvxFo"/>
+    <video
+      title="Using the free edition"
+      name="simple-project"
+      url="Tz_maDNntAk"/>
+  </view>
+
+  <!-- Files and Folders -->
+  <view
+    name="files"
+    title="Files and Folders">
+    <video
+      title="Import and configure XML files"
+      name="xml-file-updates"
+      url="mOpcHyzIrr4"/>
+    <video
+      title="Install files per build"
+      name="files-per-build"
+      url="pulKYAiM56A"/>
+    <video
+      title="Install files with the same name"
+      name="file-same-name"
+      url="eLDhTwlEzIE"/>
+  </view>
+
+  <!-- Registry-->
+  <view
+    name="registry"
+    title="Registry">
+    <video
+      title="Adding registry keys"
+      name="registry-entries"
+      url="Gf30gARPkCc"/>
+    <video
+      title="Install registry based on condition"
+      name="registry-condition"
+      url="1S8Om7oYO6k"/>
+    <video
+      title="Dynamic registry value content"
+      name="registry-dynamic-value"
+      url="ISWajMF0TLU"/>
+  </view>
+
+  <!--Builds-->
+  <view
+    name="builds"
+    title="Build">
+    <video
+      title="Adding build events"
+      name="build-events"
+      url="yrMu0I34kOY"/>
+    <video
+      title="Bundle JRE in MSI build"
+      name="bundle-jre"
+      url="zd5aT9KrEHg"/>
+    <video
+      title="Build AppX for Desktop Bridge"
+      name="desktop-bridge"
+      url="14cwW28bw5c"/>
+    <video
+      title="Build MSIX packages"
+      name="msix"
+      url="2avv6SgcNJ4"/>
+  </view>
+
+  <!--IIS-->
+  <view
+    name="iis"
+    title="IIS">
+    <video
+      title="Deploy website on IIS"
+      name="iis-website-deploy"
+      url="OcZu1s2AnIE"/>
+    <video
+      title="Deploy PHP website on IIS"
+      name="iis-php-website"
+      url="MbGpCXTPCfw"/>
+    <video
+      title="Virtual directory - install files in physical path"
+      name="iis-virtual-directory"
+      url="wDbRG3L6IOw"/>
+    <video
+      title="Browse application pools"
+      name="iis-browse-application-pools"
+      url="jlbGvK9iPCc"/>
+    <video
+      title="Browse websites"
+      name="iis-browse-websites"
+      url="QraRg_lijtY"/>
+    <video
+      title="Web deploy on IIS and Azure"
+      name="iis-web-deploy"
+      url="xuxa4-D9GvY"/>
+  </view>
+
+  <!--Custom Actions-->
+  <view
+    name="custom-actions"
+    title="Custom Actions">
+    <video
+      title="Scheduling a custom action"
+      name="schedule-custom-action"
+      url="OtEooHXPXtI"/>
+    <video
+      title="Set the custom action sequence"
+      name="custom-action-sequence"
+      url="FOJwLGDoguM"/>
+    <video
+      title="C# custom actions"
+      name="c-sharp-custact"
+      url="LwUSK58Xf40"/>
+    <video
+      title="PowerShell custom action"
+      name="ps-custact"
+      url="KJb29EehNHg"/>
+    <video
+      title="Debug C# custom actions"
+      name="debug-custact"
+      url="ayeBB97_NwA"/>
+  </view>
+
+</contextual-videos>

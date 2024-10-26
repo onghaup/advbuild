@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiComboBoxComponent">
+    <ROW Property="AI_SH_DIR" Order="1" Value="[ProductName]" Text="[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="ShDirDialogInit" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="520" Height="320" Attributes="1" Text="[BannerBitmap]" Order="100"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="Next" Type="PushButton" X="449" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Next]" TextStyle="DlgFont10" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="Cancel" Type="PushButton" X="1" Y="1" Width="1" Height="1" Attributes="3" Text="[ButtonText_Cancel]" Order="300" TextLocId="-" Options="1"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="Back" Type="PushButton" X="15" Y="290" Width="56" Height="20" Attributes="3" Text="[ButtonText_Back]" TextStyle="DlgFont10" Order="400" TextLocId="-" Options="1"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="Title" Type="Text" X="100" Y="41" Width="200" Height="30" Attributes="196611" TextStyle="TitleFontSegoe" Order="500" TextLocId="Control.Text.StartMenuShortcutsDlg#Title"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="ShDirText" Type="Text" X="100" Y="100" Width="320" Height="40" Attributes="196611" TextStyle="DlgFont10" Order="600" TextLocId="Control.Text.StartMenuShortcutsDlg#ShDirText"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="ShDirLabel" Type="Text" X="100" Y="143" Width="320" Height="11" Attributes="65539" TextStyle="DlgFont10" Order="700" TextLocId="Control.Text.StartMenuShortcutsDlg#ShDirLabel"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="ShDirComboBox" Type="ComboBox" X="100" Y="161" Width="320" Height="14" Attributes="65539" Property="AI_SH_DIR" TextStyle="DlgFont10" Order="800" TextLocId="Control.Text.StartMenuShortcutsDlg#ShDirComboBox"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="InfoText" Type="Text" X="157" Y="201" Width="263" Height="34" Attributes="196611" TextStyle="DlgFont10" Order="900" TextLocId="Control.Text.StartMenuShortcutsDlg#InfoText"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control="InfoIcon" Type="Icon" X="100" Y="193" Width="42" Height="42" Attributes="5242881" Text="[InfoIcon]" Order="1000" TextLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="StartMenuShortcutsDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control_="ShDirDialogInit" Event="DoAction" Argument="AI_LoadShortcutDirs" Condition="1 AND NOT AI_SH_INITED" Ordering="200"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control_="Next" Event="[SHORTCUTDIR]" Argument="[ProgramMenuFolder][AI_SH_DIR]" Condition="AI_INSTALL" Ordering="100"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control_="ShDirDialogInit" Event="[AI_SH_INITED]" Argument="1" Condition="1 AND NOT AI_SH_INITED" Ordering="300"/>
+    <ROW Dialog_="StartMenuShortcutsDlg" Control_="ShDirDialogInit" Event="[AI_SH_DIR]" Argument="[ProductName]" Condition="1 AND NOT AI_SH_INITED" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="StartMenuShortcutsDlg" HCentering="50" VCentering="50" Width="520" Height="320" Attributes="3" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.StartMenuShortcutsDlg"/>
+  </COMPONENT>
+</FRAGMENT>

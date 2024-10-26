@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.0" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="CE7773774076AA520A3A0A575E36" DisplayName="Python 3.10.7 x64" VersionMin="3.10"
+	  SetupFileUrl="https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe"
+	  Location="1" ExactSize="28953568" MD5="bfbe8467c7e3504f3800b0fe94d9a3e6"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64"
+	  NoUiComLine="/quiet"
+	  Operator="1" Options="yx" TargetName="Python 3.10"/>
+	<ATTRIBUTE name="GroupName" value="Flash, Java and other Tools"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CE7773774076AA520A3A0A575E36SystemFolderfile.dll" Prereq="CE7773774076AA520A3A0A575E36" SearchType="2"
+	  SearchString="HKCU\SOFTWARE\Python\PythonCore\3.10\Version" VerMin="3.10.7"
+	  Order="1" Property="PreReqSearch_CE7773774076AA520A3A0A575E36"/>
+  </COMPONENT>
+</FRAGMENT>

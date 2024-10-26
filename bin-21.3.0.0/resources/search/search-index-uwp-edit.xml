@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<SearchIndex version="1.0">
+
+  <View id="DigCertStoreComponent">
+    digital signature files
+    PFX SPC CER PVK
+    certificates URL time stamp signtool signcode store
+    authenticode
+  </View>
+
+  <View id="MsiFilesComponent">
+    files folders delete "add file" source path
+  </View>
+
+  <View id="MsiRegsComponent">
+    registry key entry entries values remove removal string integer
+    binary import export REG classes root machine permissions
+    operations import cleanup
+  </View>
+
+  <View id="FixupComponent">
+    PSF fixup AppCompat shim redirection redirect hook "file redirection" apppath
+  </View>
+
+  <View id="MsiClassComponent">
+    class DCOM COM+ register local inproc server progid handler argument 
+    appid distributed interfaces
+    type library language version 
+  </View>
+
+  <View id="DictionaryComponent">
+    languages multilingual translations dictionary dictionaries 
+    internationalization localization
+  </View>
+
+  <View id="MsiMediaComponent">
+    output folder file name architectures target platforms
+    appx msix build "desktop bridge" UWP nano server centennial 
+    converter universal "universal windows application" run
+  </View>
+
+  <View id="SccmComponent">
+    sccm definition 
+  </View>
+
+  <View id="MsiEnvComponent">
+    environment variables system create append replace modify 
+  </View>
+
+</SearchIndex>

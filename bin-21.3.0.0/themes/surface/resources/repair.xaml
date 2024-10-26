@@ -1,0 +1,16 @@
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Foreground="[AiWinUIBtnRepairForegroundNormal]" Background="[AiWinUIBtnRepairBackgroundNormal]" Width="253" Height="879" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" Margin="61,32,0,0" VerticalAlignment="Top" Padding="0,0,0,0">
+	<Button.ContentTemplate>
+		<DataTemplate>
+			<PathIcon Margin="5,0,0,5" Width="64" Height="64" Data="F1 M10 9l8 8c2 2 2 5 0 7s-5 2-7 0L3 17C0 22 1 28 6 33s11 5 16 3l23 23c2 2 5 2 7 0s2-5 0-7l-23-23c2-5 1-12-3-16S15 7 10 9zM43 29c1-1 1-1 1-1 1-1 2-1 3 0 0 0 1 0 1 1 1 1 2 3 1 5 0 0 1 1 1 1 1 1 3 3 4 4 0 0 0 0 0 0 0 0 0 0 1 0l7-7 2-2c0 0 0-1 0-1-1-1-1-1-2-2-1-1-1-1-2-2 0 0 0 0-1 0 0 0-2 0-2 0l0 0c-2 0-2-1-2-2l0 0c0 0 0-1 0-1 0 0 0-1-1-1-2-2-5-5-7-7-1-1-2-2-4-3-3-2-6-2-10-2-2 0-3 1-5 1-1 0-1 2 0 2 2 0 3 1 5 1 3 2 5 5 5 8 0 2-1 3-1 5l-2 2-6 5c-5 5-16 15-22 20-1 1-2 3-2 5 0 3 2 5 5 5 2 0 3-1 5-2 5-5 15-16 20-21l5-5L43 29z"/>
+		</DataTemplate>
+	</Button.ContentTemplate>
+	<Button.Resources>
+		<ResourceDictionary>
+			<SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="[AiWinUIBtnRepairForegroundPointerOver]"/>
+			<SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="[AiWinUIBtnRepairBackgroundPointerOver]"/>
+			<SolidColorBrush x:Key="ButtonForegroundPressed" Color="[AiWinUIBtnRepairForegroundPressed]"/>
+			<SolidColorBrush x:Key="ButtonBackgroundPressed" Color="[AiWinUIBtnRepairBackgroundPressed]"/>
+			<SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="[AiWinUIBtnRepairBorderPointerOver]"/>
+		</ResourceDictionary>
+	</Button.Resources>
+</Button>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D68C37F7458452F9628B17C593081E0" DisplayName="ASP.NET Core Runtime 3.1.32 x86" VersionMin="3.1"
+      SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/63b482d2-04b2-4dd4-baaf-d1e78de80738/40321091c872f4e77337b68fc61a5a07/aspnetcore-runtime-3.1.32-win-x86.exe"
+      Location="1" ExactSize="7289904" MD5="4fbc8cb346c00a948d03d1f0f37a098a"
+      WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86"
+      WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64"
+      NoUiComLine="/q /norestart"
+      Operator="1" Options="f" TargetName="ASP.NET Core 3.1"/>
+    <ATTRIBUTE name="GroupName" value=".NET Core"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D68C37F7458452F9628B17C593081E0ASP.NETCore" Prereq="D68C37F7458452F9628B17C593081E0" SearchType="1"
+      SearchString="HKLM\SOFTWARE\Microsoft\ASP.NET Core\Shared Framework\v3.1" VerMin="3.1.32"
+      Order="1" Property="PreReqSearch_D68C37F7458452F9628B17C593081E0"/>
+  </COMPONENT>
+</FRAGMENT>

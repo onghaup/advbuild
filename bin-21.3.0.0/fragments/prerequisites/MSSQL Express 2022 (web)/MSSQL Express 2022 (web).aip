@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.2.1" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="E728ACDC4C02BC55A8CB5C588E7D" DisplayName="SQL Server Express 2022 (web installer)" VersionMin="16.0"
+	  SetupFileUrl="https://download.microsoft.com/download/5/1/4/5145fe04-4d30-4b85-b0d1-39533663a2f1/SQL2022-SSEI-Expr.exe"
+	  Location="1" ExactSize="4290992" MD5="9d3e508bdec464eb30c0126d4c552be6"
+	  WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+	  WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64"
+	  Operator="1" Options="kx" TargetName="SQL Server Express 2022"/>
+	<ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="E728ACDC4C02BC55A8CB5C588E7DSystemFolderfile.dll" Prereq="E728ACDC4C02BC55A8CB5C588E7D" SearchType="2"
+	  SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\160\SQL2022\CurrentVersion\Version" VerMin="16.0.1000.6"
+	  Order="1" Property="PreReqSearch_E728ACDC4C02BC55A8CB5C588E7D"/>
+  </COMPONENT>
+</FRAGMENT>

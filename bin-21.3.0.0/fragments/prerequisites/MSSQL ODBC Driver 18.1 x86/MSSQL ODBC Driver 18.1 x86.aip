@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="20.2" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="A2157D1434A43B40888EED6ACEE2F" DisplayName="SQL Server ODBC Driver 18.1 x86" VersionMin="18.1.2.1"
+	  SetupFileUrl="https://download.microsoft.com/download/9/1/f/91fc3f67-34bd-44c7-9431-be5919dc8377/en-US/18.1.2.1/x86/msodbcsql.msi"
+	  Location="1" ExactSize="2596864" MD5="97bf7a2d1342f188855b44c388b8f202"
+	  WinNTVersions="Windows 7 x86, Windows 8 x86"
+	  WinNT64Versions="Windows XP/Vista/Windows 7/Windows 8 x64/Windows 8.1 x64/Windows 10 x64/Windows 11 x64"
+	  BasicUiComLine="/qb IACCEPTMSODBCSQLLICENSETERMS=YES"
+	  NoUiComLine="/qn IACCEPTMSODBCSQLLICENSETERMS=YES"
+	  Operator="1" Options="f" TargetName="SQL Server Express 2022?msodbcsql_x86.msi"/>
+	<ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="A2157D1434A43B40888EED6ACEE2FSystemFolderfile.dll_1" Prereq="A2157D1434A43B40888EED6ACEE2F" SearchType="2"
+	  SearchString="HKLM\SOFTWARE\Microsoft\Microsoft ODBC Driver 18 for SQL Server\CurrentVersion\Version" VerMin="18.1.2.1"
+	  Order="1" Property="PreReqSearch_1_A2157D1434A43B40888EED6ACEE2F"/>
+  </COMPONENT>
+</FRAGMENT>

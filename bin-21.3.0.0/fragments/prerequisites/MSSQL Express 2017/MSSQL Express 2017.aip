@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="16.6" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="B0C8318EB4B53AF0833C6FFA9CC4B" DisplayName="SQL Server Express 2017" VersionMin="14.0"
+      SetupFileUrl="https://download.microsoft.com/download/E/F/2/EF23C21D-7860-4F05-88CE-39AA114B014B/SQLEXPR_x64_ENU.exe"
+      Location="1" ExactSize="289058768" MD5="409d2384684cd6a45c64bdd5414fbf24"
+      WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86"
+      WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64"
+      ComLine="/UpdateEnabled=False"
+      NoUiComLine="/q /IACCEPTSQLSERVERLICENSETERMS /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS"
+      Operator="1" Options="xk" TargetName="SQL Server Express 2017"/>
+    <ATTRIBUTE name="GroupName" value="Database"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="B0C8318EB4B53AF0833C6FFA9CC4BVersion" Prereq="B0C8318EB4B53AF0833C6FFA9CC4B" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\140\SQL2017\CurrentVersion\Version" VerMin="14.0.1000.169"
+      Order="1" Property="PreReqSearch_B0C8318EB4B53AF0833C6FFA9CC4B"/>
+    <ROW SearchKey="B0C8318EB4B53AF0833C6FFA9CC4BCurrentVersion" Prereq="B0C8318EB4B53AF0833C6FFA9CC4B" SearchType="2"
+      SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\150\Tools\ClientSetup\CurrentVersion\CurrentVersion" VerMin="15.0"
+      Order="2" Property="PreReqSearch_1_B0C8318EB4B53AF0833C6FFA9CC4B"/>
+  </COMPONENT>
+</FRAGMENT>

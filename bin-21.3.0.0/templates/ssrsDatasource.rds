@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQLSvMachine">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=dragos-sqlsvvm;Initial Catalog=myCorp</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>cd86351c-2674-4658-a1a5-4dab0fdc5ccc</DataSourceID>
+</RptDataSource>

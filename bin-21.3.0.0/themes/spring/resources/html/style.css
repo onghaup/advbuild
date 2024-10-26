@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+a img {
+  border: none;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+.center-inline {
+  text-align: center !important;
+}
+/********/
+
+#main {
+  width: 450pt;
+  height: 360pt;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/********/
+
+div#footer {
+  height: 52pt;
+  position: absolute;
+  bottom: 0;
+  width: 450pt;
+}
+/********/
+div#header {
+  height: 49pt;
+  width: 450pt;
+  position: relative;
+}
+
+div#logo {
+  height: 52.5pt;
+  width: 45pt;
+  float: left;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font: normal 13pt/49pt 'Segoe UI', 'Trebuchet MS', Arial;
+  float: left;
+  margin: 0;
+  color: #323232;
+}
+
+/********/
+
+div#content {
+  height: 259pt;
+  width: 360pt;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.central {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+}
+
+div.aditional-info {
+  position: absolute;
+  bottom: 8pt;
+}
+
+  div.aditional-info p {
+    font-size: 9pt;
+    color: #777777;
+    font-weight: normal;
+    padding: 3.75pt 0 0 0;
+  }
+/********/
+
+p.description {
+  font: normal 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: #575757;
+  text-align: justify;
+  margin: 0;
+  padding: 8pt 0 0 0;
+}
+
+.myEdit {
+  font: normal 11pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: black;
+  text-align: justify;
+  margin: 0;
+  padding: -1px 0 0 0;
+}
+
+.myBtn {
+  font: normal 11pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: -1px 0 0 0;
+}
+/********/
+
+a#print {
+  font-size: 18pt;
+  display: block;
+
+  position: absolute;
+  top: 46pt;
+  right: 0;
+  text-decoration: none;
+}
+
+div#logoBig {
+  height: 96pt;
+  width: 96pt;
+  margin: 63pt auto 0 auto;
+  background-repeat: no-repeat;
+}
+/********/
+
+div.button-group {
+  width: 360pt;
+  margin: 15pt auto 0 auto;
+}
+
+.buttonwrapper-right {
+  float: right !important;
+  margin-left: 2pt;
+}
+
+.buttonwrapper a, .buttonwrapper-disabled a {
+  float: left;
+  font: bold 11pt/21pt 'Trebuchet MS', Helvetica, sans-serif;
+  height: 24pt;
+  padding-left: 8pt;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 3.75pt;
+  border-width: thin;
+  border-style: solid;
+}
+    
+.buttonwrapper a, .buttonwrapper-disabled a {
+  padding: 3.75pt 7.5pt 0pt 12pt;
+}
+
+.buttonwrapper img {
+  padding-top: 3.75pt;
+}
+
+.buttonwrapper a b img {
+  float: left;
+  padding-right: 3.75pt;
+}
+
+.buttonwrapper-disabled a, .buttonwrapper-disabled a:hover, .buttonwrapper-disabled a:active {
+  color: #b8b8b8;
+  cursor: default;
+}
+
+
+/*Large button*/
+.button-large {
+  margin: 7pt auto;
+  height: 42pt;
+  width: 205pt;
+  position: relative;
+  top: 56pt;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(#f2f2f2, #e6e6e6);
+  cursor: pointer;
+  border-radius: 3.75pt;
+  /* border: 1px solid #d6d3d3; */
+  box-shadow: 0pt 1pt 5pt #d6d3d3;
+}
+
+.button-large img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  
+  height: 48pt;
+  width: 48pt;
+}
+
+.button-large a {
+  float: left;
+  font: bold 15pt 'Segoe UI', 'Trebuchet MS', Arial;
+  height: 42pt;
+  padding-left: 45pt;
+  text-decoration: none;
+}
+
+.button-large a span b {
+  display: block;
+  color: #787878;
+  font: normal 9pt Verdana, sans-serif;
+}
+
+.button-large a, .button-large a:visited, .button-large a:active {
+  color: #4e4e4e;
+}
+
+.button-large a:hover {
+  ;
+  text-decoration: none;
+}
+
+.button-large a span {
+  display: block;
+  padding: 3pt 0 5pt 0pt;
+  width: 150pt;
+  cursor: pointer;
+  position: relative;
+  left: 3.75pt;
+}
+
+
+.description {
+  font: normal 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: #777777;
+}
+
+.langtext {
+  font: normal 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: #777777;
+  position: relative;
+  left: 54pt;
+  top: 41pt;
+}
+
+div.central input.myEdit {
+  border: 1pt solid #b3b3b3;
+  margin: 5pt 0 5pt 0;
+  padding-bottom: 2pt;
+  cursor: text;
+  height: 14pt;
+  width: 99%;
+}
+
+div.aditional-info label {
+  font: normal 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: #777777;
+}
+
+a {
+  color: #0645AD;
+  font: normal 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  text-align: justify;
+}
+
+  a:hover {
+    color: #3366BB;
+  }
+
+input[type=text]:disabled {
+  background: #F9F9F9;
+}
+
+.editComboBox {
+  position: relative;
+  width: 254pt;
+  height: 19pt;
+  border: 0;
+  padding: 0;
+  margin: 5pt 0 5pt 0;
+}
+
+  .editComboBox .comboBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 254pt;
+    height: 18pt;
+    line-height: 15pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .editComboBox .editBox {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }

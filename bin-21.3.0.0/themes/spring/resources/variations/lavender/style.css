@@ -1,0 +1,34 @@
+
+#advinst-text, #advinst-text-shadow
+{
+  position: absolute;
+  right: 8pt;
+  top: 8pt;
+  font: bold 9pt 'Segoe UI', 'Trebuchet MS', Arial;
+  color: #b5a9e1;
+}
+
+#advinst-text-shadow
+{
+  top: 9pt;
+  color: white;
+}
+
+.buttonwrapper a {
+   background-image: linear-gradient(#AEAEFD, #4C30C8);
+   border-color: #5C37E4;
+}
+.buttonwrapper a:hover {
+   background-image: linear-gradient(#C1C1FF, #684DDE);
+   border-color: #6847E9;
+}
+
+.buttonwrapper a:active {
+   background-image: linear-gradient(#756DE5, #4E32C9);
+   border-color: #623FE6;
+}
+
+.buttonwrapper-disabled a, .buttonwrapper-disabled a:hover, .buttonwrapper-disabled a:active {
+   background-image: linear-gradient(#F5F5F5, #CACACA);
+   border-color: #F4F4F4;
+}

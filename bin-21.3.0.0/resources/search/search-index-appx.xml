@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<SearchIndex version="1.0">
+
+  <View id="DigCertStoreComponent">
+    digital signature files
+    PFX SPC CER PVK
+    certificates URL time stamp signtool signcode store
+    authenticode
+  </View>
+
+  <View id="GenericFileComponent">
+    files folders delete "add file" source path
+  </View>
+
+  <View id="GenericRegistryComponent">
+    registry key entry entries values remove removal string integer
+    binary import export REG classes root machine permissions
+    operations import cleanup
+  </View>
+
+  <View id="DictionaryComponent">
+    languages multilingual translations dictionary dictionaries 
+    internationalization localization
+  </View>
+
+  <View id="AppXCfgComponent">
+    output folder file name schema architectures target platforms
+    appx msix build run
+  </View>
+
+  <View id="SccmComponent">
+    sccm definition 
+  </View>
+
+</SearchIndex>
